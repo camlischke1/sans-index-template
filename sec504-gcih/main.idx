@@ -1,0 +1,80 @@
+\comment{ AUTHOR : Alexandre D'Hondt
+
+USER DEFINED COMMANDS AND SPECIAL SYNTAX
+  a. Add a blank line between paragraphs : \blankline
+       Syntax in .idx file : \indexentry{...@\blankline|comment}{0}
+
+  b. Insert a page break : (standard) \newpage
+       Syntax in .idx file : \indexentry{...@\blankline|newpage \comment}{0}
+
+  c. Fills page number with book name : \book{x}
+       Syntax in .idx file : \indexentry{...|book{x}}{...}
+          with x = nbr of the book to display in the page number with format : [BOOKNAME][x]
+          Example : SANS SEC504 book ->  504.1--1-10
+                                     =======
+  d. Insert an entry rank : \rate{x}
+       Syntax in .idx file : \indexentry{... \rate{x}|...}{...}
+          with x = # of \star's to display between item and dotfill before page number
+          
+  e. Insert an entry with special style : \indexentry{my_entry@\text..{my_entry}|...}{...}
+       Before '@' is for indexing, after is what will be displayed
+  
+  NB :
+    - ... = sorting key
+    - \blankline is defined in the .tex file and fills the line with space
+    - \rank is defined in the .tex file and uses a the forloop package to repeat x times \star
+    - comment style (behind "|") will act as a \comment command, commenting the page number "{0}"
+
+
+    % TeX build command on Windows:
+%   makeindex main.idx -s std.ist | pdflatex -synctex=1 -interaction=nonstopmode main.tex;del *.log; del *.ind;del *.synctex.gz;del *.aux;del *.ilg
+}
+
+\comment{********************************************************************************************
+                                       MODULES SECTION
+                                       /comment{\indexentry{200@\textbf{Modules}!DO THIS LASTLs|book{1}}{37}}
+*****************************************************************************************************}
+
+
+
+
+
+
+\comment{********************************************************************************************
+                                       WEBSITES/TOOLS SECTION
+                                       /comment{\indexentry{200@\textbf{Tools}!A nice tool|book{1}}{57}}
+*****************************************************************************************************}
+
+
+
+
+
+
+
+\comment{********************************************************************************************
+                                       LINUX COMMANDS SECTION
+                                       /comment{\indexentry{200@\textbf{Commands}!\textbf{Linux}!\cmds{command}|book{1}}{57}}
+*****************************************************************************************************}
+
+
+
+
+
+
+
+\comment{********************************************************************************************
+                                       WINDOWS COMMANDS SECTION
+                                       /comment{\indexentry{200@\textbf{Commands}!\textbf{Windows}!\cmds{command}|book{1}}{57}}
+*****************************************************************************************************}
+
+
+
+
+
+
+
+\indexentry{999@\blankline|newpage \comment}{0}
+\comment{********************************************************************************************
+                                       BOOK SECTION
+                                       /comment{\indexentry{200@\textbf{A}!A reference|book{1}}{6}}
+*****************************************************************************************************}
