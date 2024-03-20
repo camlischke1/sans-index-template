@@ -32,9 +32,44 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 
 \comment{********************************************************************************************
                                        BOOK TERMS SECTION
-                                       /comment{\indexentry{200@\textbf{Book Terms}!A reference|book{1}}{6}}
 *****************************************************************************************************}
-\indexentry{1@A reference1|book{1}}{6}
+\indexentry{1@preparation|book{1}}{25}
+\indexentry{1@detection|book{1}}{26}
+\indexentry{1@scoping|book{1}}{28}
+\indexentry{1@containment|book{1}}{29}
+\indexentry{1@eradication|book{1}}{30}
+\indexentry{1@recovery|book{1}}{31}
+\indexentry{1@remediation|book{1}}{32}
+\indexentry{1@post-incident|book{1}}{33}
+\indexentry{1@encoding|book{1}}{45}
+\indexentry{1@differential analysis|book{1}}{57}
+\indexentry{1@differential analysis|book{W}}{25-31}
+\indexentry{1@gold image|book{1}}{57}
+\indexentry{1@Windows Event Log|book{1}}{55}
+\indexentry{1@CIM|book{1}}{42}
+\indexentry{1@WMI|book{1}}{42}
+\indexentry{1@LSASS|book{1}}{42-3}
+\indexentry{1@COMSPEC|book{1}}{55}
+\indexentry{1@registry keys|book{W}}{20}
+\indexentry{1@ASEPs|book{W}}{20}
+\indexentry{1@HKCU|book{W}}{20}
+\indexentry{1@HKLM|book{W}}{20}
+\indexentry{1@Berkeley Packet Filters|book{1}}{70}
+\indexentry{1@proxies!web|book{1}}{71}
+\indexentry{1@web proxies|book{1}}{71}
+\indexentry{1@access logs|book{1}}{72}
+\indexentry{1@logs!access|book{1}}{72}
+\indexentry{1@event of interest|book{1}}{83}
+\indexentry{1@behavioral analysis|book{1}}{88,92-3}
+\indexentry{1@static analysis|book{1}}{88}
+\indexentry{1@snapshot|book{1}}{93}
+\indexentry{1@continuous recording|book{1}}{93}
+\indexentry{1@prefetch files|book{1}}{95}
+\indexentry{1@malware analysis!behavioral|book{1}}{88,92-3}
+\indexentry{1@malware analysis!static|book{1}}{88,98}
+\indexentry{1@malware analysis!online|book{1}}{89}
+
+
 
 
 
@@ -48,6 +83,23 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{10@{\Large\textbf{Modules}}!Incident Response!PICERL Six-Step Process|book{1}}{21-2}
 \indexentry{10@{\Large\textbf{Modules}}!Incident Response!DAIR Dynamic Approach|book{1}}{25-34}
 \indexentry{10@{\Large\textbf{Modules}}!Incident Response!summary of|book{1}}{35-6}
+\indexentry{10@{\Large\textbf{Modules}}!Live Examination!of processes|book{1}}{40-5}
+\indexentry{10@{\Large\textbf{Modules}}!Live Examination!of network activity|book{1}}{46-9}
+\indexentry{10@{\Large\textbf{Modules}}!Live Examination!of encoded data|book{1}}{45}
+\indexentry{10@{\Large\textbf{Modules}}!Live Examination!of services|book{1}}{50}
+\indexentry{10@{\Large\textbf{Modules}}!Live Examination!of registry keys|book{1}}{51-2}
+\indexentry{10@{\Large\textbf{Modules}}!Live Examination!of accounts|book{1}}{53}
+\indexentry{10@{\Large\textbf{Modules}}!Live Examination!of scheduled tasks|book{1}}{54}
+\indexentry{10@{\Large\textbf{Modules}}!Live Examination!of logs|book{1}}{55}
+\indexentry{10@{\Large\textbf{Modules}}!Live Examination!summary of|book{1}}{62}
+\indexentry{10@{\Large\textbf{Modules}}!Live Examination!lab|lab{1.}}{1}
+\indexentry{10@{\Large\textbf{Modules}}!Network Investigations!summary of|book{1}}{73}
+\indexentry{10@{\Large\textbf{Modules}}!Network Examination!lab|lab{1.}}{2}
+\indexentry{10@{\Large\textbf{Modules}}!Memory Investigations!summary of|book{1}}{99}
+\indexentry{10@{\Large\textbf{Modules}}!Memory Examination!lab|lab{1.}}{3}
+\indexentry{10@{\Large\textbf{Modules}}!Malware Investigations!monitoring the environment|book{1}}{92}
+\indexentry{10@{\Large\textbf{Modules}}!Malware Examination!lab|lab{1.}}{4}
+\indexentry{10@{\Large\textbf{Modules}}!AI for IR!lab|book{1}}{103,120}
 
 
 
@@ -55,8 +107,28 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 
 \comment{********************************************************************************************
                                        WEBSITES/TOOLS SECTION
-                                       /comment{\indexentry{10@{\Large\textbf{Tools}}!A nice tool|book{1}}{57}}
 *****************************************************************************************************}
+\indexentry{10@{\Large\textbf{Tools}}!Powershell|book{1}}{39}
+\indexentry{10@{\Large\textbf{Tools}}!Powershell!cheatsheet|book{1}}{59,60}
+\indexentry{10@{\Large\textbf{Tools}}!CyberChef|book{1}}{45}
+\indexentry{10@{\Large\textbf{Tools}}!Sysinternals|book{1}}{61}
+\indexentry{10@{\Large\textbf{Tools}}!Sysinternals!Process Explorer|book{1}}{61}
+\indexentry{10@{\Large\textbf{Tools}}!Sysinternals!Process Monitor|book{1}}{61}
+\indexentry{10@{\Large\textbf{Tools}}!Sysinternals!TCPView|book{1}}{61}
+\indexentry{10@{\Large\textbf{Tools}}!Sysinternals!Autoruns|book{1}}{61}
+\indexentry{10@{\Large\textbf{Tools}}!Sysinternals!Sysmon|book{1}}{61}
+\indexentry{10@{\Large\textbf{Tools}}!Sysinternals!Procdump|book{1}}{61}
+\indexentry{10@{\Large\textbf{Tools}}!Squid|book{1}}{71}
+\indexentry{10@{\Large\textbf{Tools}}!Blue Coat|book{1}}{71}
+\indexentry{10@{\Large\textbf{Tools}}!Forefront TMG|book{1}}{71}
+\indexentry{10@{\Large\textbf{Tools}}!Volatility|book{1}}{77-82}
+\indexentry{10@{\Large\textbf{Tools}}!WinPmem|book{1}}{77-82}
+\indexentry{10@{\Large\textbf{Tools}}!VirusTotal|book{1}}{89}
+\indexentry{10@{\Large\textbf{Tools}}!Hybrid Analysis|book{1}}{89}
+\indexentry{10@{\Large\textbf{Tools}}!Regshot|book{1}}{94-5}
+\indexentry{10@{\Large\textbf{Tools}}!Sysinternals!Process Monitor|book{1}}{96-7}
+\indexentry{10@{\Large\textbf{Tools}}!IDA Pro|book{1}}{98}
+\indexentry{10@{\Large\textbf{Tools}}!Ghidra|book{1}}{98}
 
 
 
@@ -66,9 +138,10 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 
 \comment{********************************************************************************************
                                        LINUX COMMANDS SECTION
-                                       /comment{\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{command}|book{1}}{57}}
 *****************************************************************************************************}
-
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{tcpdump}|book{1}}{68-9}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{strings}|book{1}}{91}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{sha256sum}|book{1}}{91}
 
 
 
@@ -77,5 +150,27 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 
 \comment{********************************************************************************************
                                        WINDOWS COMMANDS SECTION
-                                       /comment{\indexentry{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{command}|book{1}}{57}}
 *****************************************************************************************************}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-Process}|book{1}}{40}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Stop-Process}|book{1}}{40}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-Process}|book{W}}{14-6}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-CimInstance}|book{1}}{40}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-NetTCPConnection}|book{1}}{46}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-Service}|book{1}}{50}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-ChildItem}|book{1}}{51}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-ItemProperty}|book{1}}{51}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Remove-ItemProperty}|book{W}}{23}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Remove-ItemProperty}|book{W}}{24}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-LocalUser}|book{1}}{53}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-LocalGroup}|book{1}}{53}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-LocalGroupMember}|book{1}}{53}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Where-Object}|book{1}}{53}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Where-Object}|book{W}}{15-7}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Format-List}|book{1}}{50}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Select-Object}|book{1}}{40}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Select-Object}|book{W}}{15-7}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-ScheduledTask}|book{1}}{54}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Export-ScheduledTask}|book{1}}{54}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-ScheduledTaskInfo}|book{1}}{54}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-WinEvent}|book{1}}{55}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-FileHash}|book{1}}{91}
