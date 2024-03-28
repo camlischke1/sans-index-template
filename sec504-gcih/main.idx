@@ -43,6 +43,7 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@post-incident|book{1}}{33}
 \indexentry{1@encoding|book{1}}{45}
 \indexentry{1@differential analysis|book{1}}{57}
+\indexentry{1@differential analysis|book{3}}{25}
 \indexentry{1@differential analysis|book{W}}{25-31}
 \indexentry{1@gold image|book{1}}{57}
 \indexentry{1@Windows Event Log|book{1}}{55}
@@ -56,50 +57,239 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@HKLM|book{W}}{20}
 \indexentry{1@Berkeley Packet Filters|book{1}}{70}
 \indexentry{1@proxies!web|book{1}}{71}
-\indexentry{1@web proxies|book{1}}{71}
+\indexentry{1@proxies!relay|book{3}}{93}
+\indexentry{1@web!proxies|book{1}}{71}
 \indexentry{1@access logs|book{1}}{72}
+\indexentry{1@access logs|book{3}}{79}
 \indexentry{1@logs!access|book{1}}{72}
+\indexentry{1@logs!access|book{3}}{79}
+\indexentry{1@logs!DNS|book{2}}{18}
+\indexentry{1@logs!DNS|book{3}}{79}
 \indexentry{1@event of interest|book{1}}{83}
-\indexentry{1@behavioral analysis|book{1}}{88,92-3}
+\indexentry{1@behavioral analysis}{92}
+\indexentry{1@behavioral analysis}{93}
+\indexentry{1@behavioral analysis|book{1}}{88}
 \indexentry{1@static analysis|book{1}}{88}
 \indexentry{1@snapshot|book{1}}{93}
 \indexentry{1@continuous recording|book{1}}{93}
-\indexentry{1@prefetch files|book{1}}{95}
-\indexentry{1@malware analysis!behavioral|book{1}}{88,92-3}
-\indexentry{1@malware analysis!static|book{1}}{88,98}
+\indexentry{1@prefetch|book{1}}{95}
+\indexentry{1@malware analysis!behavioral|book{1}}{88}
+\indexentry{1@malware analysis!behavioral}{92-3}
+\indexentry{1@malware analysis!static|book{1}}{88}
+\indexentry{1@malware analysis!static}{98}
 \indexentry{1@malware analysis!online|book{1}}{89}
-
-
-
-
+\indexentry{1@MITRE ATT\&CK|book{2}}{6-8}
+\indexentry{1@discovery|book{2}}{10}
+\indexentry{1@enumeration|book{2}}{11}
+\indexentry{1@DNS!logs|book{2}}{18}
+\indexentry{1@DNS!logs|book{3}}{79}
+\indexentry{1@DNS!zone transfer|book{2}}{13}
+\indexentry{1@DNS!split|book{2}}{18}
+\indexentry{1@DNS!automated interrogation|book{2}}{14}
+\indexentry{1@zone transfer|book{2}}{13}
+\indexentry{1@certificates!transparency|book{2}}{15-6}
+\indexentry{1@certificates!untrusted|book{2}}{15}
+\indexentry{1@certificates!authority|book{2}}{15}
+\indexentry{1@certificates!CN field|book{2}}{20}
+\indexentry{1@certificate authorities|book{2}}{15}
+\indexentry{1@split DNS|book{2}}{18}
+\indexentry{1@common name|book{2}}{20}
+\indexentry{1@CN field|book{2}}{20}
+\indexentry{1@OSINT|book{2}}{23}
+\indexentry{1@OSINT!framework|book{2}}{31}
+\indexentry{1@web!crawl|book{2}}{25}
+\indexentry{1@web!application firewall|book{2}}{61}
+\indexentry{1@crawl|book{2}}{25} 
+\indexentry{1@AADInternals|book{2}}{27}
+\indexentry{1@NMAP|book{2}}{14}
+\indexentry{1@NMAP}{35-47}
+\indexentry{1@NMAP!default behavior|book{2}}{37}
+\indexentry{1@NMAP!port scan|book{2}}{39}
+\indexentry{1@NMAP!scripts|book{2}}{44-5}
+\indexentry{1@ports!common|book{2}}{40}
+\indexentry{1@IANA|book{2}}{40}
+\indexentry{1@NSE scripts|book{2}}{44-5}
+\indexentry{1@json!cloud|book{2}}{50}
+\indexentry{1@Masscan|book{2}}{54}
+\indexentry{1@host attribution|book{2}}{54}
+\indexentry{1@enumeration!cloud provider IP|book{2}}{54}
+\indexentry{1@SMB!shares|book{2}}{69-73}
+\indexentry{1@SMB!versions|book{2}}{68}
+\indexentry{1@SMB!password attacks|book{2}}{77}
+\indexentry{1@enumeration!SMB shares|book{2}}{69-72}
+\indexentry{1@enumeration!DNS|book{2}}{12}
+\indexentry{1@enumeration!certificates|book{2}}{15}
+\indexentry{1@enumeration!subdomains|book{2}}{17}
+\indexentry{1@SMBleed|book{2}}{76}
+\indexentry{1@SMBGhost|book{2}}{76}
+\indexentry{1@EternalBlue|book{2}}{76}
+\indexentry{1@password!reset|book{2}}{79}
+\indexentry{1@ports!SMB|book{2}}{81}
+\indexentry{1@PVLAN|book{2}}{81}
+\indexentry{1@Sigma rules|book{2}}{86}
+\indexentry{1@Hayabusa|book{2}}{86}
+\indexentry{1@Snort|book{2}}{86}
+\indexentry{1@YARA|book{2}}{86}
+\indexentry{1@password!guessing|book{3}}{4}
+\indexentry{1@password!spraying|book{3}}{5}
+\indexentry{1@password!wordlist generation|book{3}}{7}
+\indexentry{1@credential stuffing|book{3}}{8-9}
+\indexentry{1@Microsoft 365!authentication|book{3}}{15-6}
+\indexentry{1@AADSTS|book{3}}{16}
+\indexentry{1@Microsoft 365!smart lockout|book{3}}{19}
+\indexentry{1@Microsoft 365!lockout bypass|book{3}}{20-24}
+\indexentry{1@Microsoft 365!unified audit logging|book{3}}{25}
+\indexentry{1@Azure!smart lockout|book{3}}{19}
+\indexentry{1@AWS API gateway|book{3}}{20}
+\indexentry{1@proxies!API gateways|book{3}}{20}
+\indexentry{1@proxies!API gateways|book{3}}{20}
+\indexentry{1@authentication!Microsoft 365|book{3}}{15-6}
+\indexentry{1@authentication!multifactor!bypass|book{3}}{23}
+\indexentry{1@authentication!multifactor!deployment|book{3}}{64}
+\indexentry{1@authentication!Microsoft conditional access|book{3}}{23}
+\indexentry{1@Microsoft conditional access|book{3}}{23}
+\indexentry{1@conditional access|book{3}}{23}
+\indexentry{1@unified audit logging|book{3}}{25}
+\indexentry{1@password!hashes|book{3}}{46}
+\indexentry{1@hashes|book{3}}{46}
+\indexentry{1@hashes!LANMAN|book{3}}{32}
+\indexentry{1@LANMAN hashes|book{3}}{32}
+\indexentry{1@NT hashes|book{3}}{33}
+\indexentry{1@hashes!NT|book{3}}{33}
+\indexentry{1@hashes!indicators|book{3}}{42}
+\indexentry{1@SAM|book{3}}{33}
+\indexentry{1@password!salts|book{3}}{33-5}
+\indexentry{1@salts|book{3}}{33-5}
+\indexentry{1@hashes!domain controller|book{3}}{33}
+\indexentry{1@registry keys!SYSTEM hive|book{3}}{36}
+\indexentry{1@SYSTEM hive|book{3}}{36}
+\indexentry{1@NTDS.dit|book{3}}{36}
+\indexentry{1@domain controller!hashes|book{3}}{36}
+\indexentry{1@domain controller!backup|book{3}}{36}
+\indexentry{1@hashes!Windows format|book{3}}{40}
+\indexentry{1@empty hashes!format|book{3}}{40}
+\indexentry{1@hashes!empty|book{3}}{40}
+\indexentry{1@hashes!Linux format|book{3}}{42}
+\indexentry{1@hashing rounds|book{3}}{43-4}
+\indexentry{1@hashes!MD4,5|book{3}}{42-44}
+\indexentry{1@hashes!SHA256,512|book{3}}{42-44}
+\indexentry{1@GPU|book{3}}{44}
+\indexentry{1@hashes!PBKDF2|book{3}}{44}
+\indexentry{1@PBKDF2|book{3}}{45}
+\indexentry{1@Argon2|book{3}}{45}
+\indexentry{1@Yescrypt|book{3}}{45}
+\indexentry{1@hashing rounds!algorithms|book{3}}{45}
+\indexentry{1@hashing rounds!algorithms|book{3}}{42}
+\indexentry{1@crypt|book{3}}{42}
+\indexentry{1@password!cracking|book{3}}{49}
+\indexentry{1@password!mutation|book{3}}{49}
+\indexentry{1@hashcat!attack modes!straight|book{3}}{53}
+\indexentry{1@hashcat!attack modes!combinator|book{3}}{54}
+\indexentry{1@hashcat!attack modes!mask|book{3}}{55-6}
+\indexentry{1@hashcat!attack modes!hybrid|book{3}}{57-8}
+\indexentry{1@hashcat!potfile|book{3}}{59}
+\indexentry{1@hashcat!rules|book{3}}{60}
+\indexentry{1@NoLMHash|book{3}}{61}
+\indexentry{1@GPO|book{3}}{62}
+\indexentry{1@group policy|book{3}}{62}
+\indexentry{1@PAM|book{3}}{62}
+\indexentry{1@RADIUS|book{3}}{62}
+\indexentry{1@kerberos|book{3}}{62}
+\indexentry{1@FIDO2|book{3}}{64}
+\indexentry{1@multifactor|book{3}}{64}
+\indexentry{1@multifactor!bypass|book{3}}{23}
+\indexentry{1@cloud storage!AWS S3|book{3}}{71}
+\indexentry{1@cloud storage!endpoint URLs|book{3}}{70}
+\indexentry{1@cloud storage!GCP buckets|book{3}}{72}
+\indexentry{1@cloud storage!Azure blobs|book{3}}{73}
+\indexentry{1@cloud storage!GCP buckets!permissions|book{3}}{74}
+\indexentry{1@wordlist generation!passwords|book{3}}{7}
+\indexentry{1@wordlist generation!bucket names|book{3}}{78}
+\indexentry{1@cloud storage!GCP buckets!ACLs|book{3}}{69}
+\indexentry{1@ACLs|book{3}}{69}
+\indexentry{1@SNI|book{3}}{79}
+\indexentry{1@netcat!client|book{3}}{86}
+\indexentry{1@netcat!listen|book{3}}{87}
+\indexentry{1@netcat!data transfer|book{3}}{88}
+\indexentry{1@netcat!port scanner|book{3}}{89}
+\indexentry{1@netcat!backdoors|book{3}}{90-1}
+\indexentry{1@backdoors|book{3}}{90-1}
+\indexentry{1@login!bypass|book{3}}{23}
+\indexentry{1@login!bypass}{90}
+\indexentry{1@netcat!relays|book{3}}{93-4}
+\indexentry{1@named pipes|book{3}}{93-4}
+\indexentry{1@relays|book{3}}{93-4}
+\indexentry{1@FIFO files|book{3}}{93-4}
+\indexentry{1@PVLAN|book{3}}{95}
+\indexentry{1@password!length|book{3}}{62}
 
 
 
 
 \indexentry{9@\blankline|newpage \comment}{0}
+\indexentry{11@\blankline|newpage \comment}{0}
 \comment{********************************************************************************************
                                        MODULES SECTION
 *****************************************************************************************************}
-\indexentry{10@{\Large\textbf{Modules}}!Incident Response!PICERL Six-Step Process|book{1}}{21-2}
-\indexentry{10@{\Large\textbf{Modules}}!Incident Response!DAIR Dynamic Approach|book{1}}{25-34}
-\indexentry{10@{\Large\textbf{Modules}}!Incident Response!summary of|book{1}}{35-6}
-\indexentry{10@{\Large\textbf{Modules}}!Live Examination!of processes|book{1}}{40-5}
-\indexentry{10@{\Large\textbf{Modules}}!Live Examination!of network activity|book{1}}{46-9}
-\indexentry{10@{\Large\textbf{Modules}}!Live Examination!of encoded data|book{1}}{45}
-\indexentry{10@{\Large\textbf{Modules}}!Live Examination!of services|book{1}}{50}
-\indexentry{10@{\Large\textbf{Modules}}!Live Examination!of registry keys|book{1}}{51-2}
-\indexentry{10@{\Large\textbf{Modules}}!Live Examination!of accounts|book{1}}{53}
-\indexentry{10@{\Large\textbf{Modules}}!Live Examination!of scheduled tasks|book{1}}{54}
-\indexentry{10@{\Large\textbf{Modules}}!Live Examination!of logs|book{1}}{55}
-\indexentry{10@{\Large\textbf{Modules}}!Live Examination!summary of|book{1}}{62}
-\indexentry{10@{\Large\textbf{Modules}}!Live Examination!lab|lab{1.}}{1}
-\indexentry{10@{\Large\textbf{Modules}}!Network Investigations!summary of|book{1}}{73}
-\indexentry{10@{\Large\textbf{Modules}}!Network Examination!lab|lab{1.}}{2}
-\indexentry{10@{\Large\textbf{Modules}}!Memory Investigations!summary of|book{1}}{99}
-\indexentry{10@{\Large\textbf{Modules}}!Memory Examination!lab|lab{1.}}{3}
-\indexentry{10@{\Large\textbf{Modules}}!Malware Investigations!monitoring the environment|book{1}}{92}
-\indexentry{10@{\Large\textbf{Modules}}!Malware Examination!lab|lab{1.}}{4}
-\indexentry{10@{\Large\textbf{Modules}}!AI for IR!lab|book{1}}{103,120}
+\indexentry{100@{\Large\textbf{DFIR}}!Incident Response!PICERL Six-Step Process|book{1}}{21-2}
+\indexentry{100@{\Large\textbf{DFIR}}!Incident Response!DAIR Dynamic Approach|book{1}}{25-34}
+\indexentry{100@{\Large\textbf{DFIR}}!Incident Response!summary of|book{1}}{35-6}
+\indexentry{100@{\Large\textbf{DFIR}}!Live Examination!of processes|book{1}}{40-5}
+\indexentry{100@{\Large\textbf{DFIR}}!Live Examination!of network activity|book{1}}{46-9}
+\indexentry{100@{\Large\textbf{DFIR}}!Live Examination!of encoded data|book{1}}{45}
+\indexentry{100@{\Large\textbf{DFIR}}!Live Examination!of services|book{1}}{50}
+\indexentry{100@{\Large\textbf{DFIR}}!Live Examination!of registry keys|book{1}}{51-2}
+\indexentry{100@{\Large\textbf{DFIR}}!Live Examination!of accounts|book{1}}{53}
+\indexentry{100@{\Large\textbf{DFIR}}!Live Examination!of scheduled tasks|book{1}}{54}
+\indexentry{100@{\Large\textbf{DFIR}}!Live Examination!of logs|book{1}}{55}
+\indexentry{100@{\Large\textbf{DFIR}}!Live Examination!summary of|book{1}}{62}
+\indexentry{100@{\Large\textbf{DFIR}}!Network Investigations!summary of|book{1}}{73}
+\indexentry{100@{\Large\textbf{DFIR}}!Memory Investigations!summary of|book{1}}{99}
+\indexentry{100@{\Large\textbf{DFIR}}!Malware Investigations!monitoring the environment|book{1}}{92}
+\indexentry{100@{\Large\textbf{DFIR}}!Malware Investigations!summary of|book{1}}{99}
+\indexentry{100@{\Large\textbf{DFIR}}!AI for IR!summary of|book{1}}{103}
+\indexentry{100@{\Large\textbf{DFIR}}!AI for IR!summary of}{120}
+\indexentry{100@{\Large\textbf{Offense}}!Discovery and Enumeration!defense against|book{2}}{18}
+\indexentry{100@{\Large\textbf{Offense}}!Discovery and Enumeration!summary|book{2}}{19}
+\indexentry{100@{\Large\textbf{Offense}}!Discovery and Enumeration!DNS|book{2}}{12-4}
+\indexentry{100@{\Large\textbf{Offense}}!Discovery and Enumeration!certificates|book{2}}{15-6}
+\indexentry{100@{\Large\textbf{Offense}}!Discovery and Enumeration!subdomains|book{2}}{17}
+\indexentry{100@{\Large\textbf{Offense}}!Web Recon!defenses|book{2}}{32}
+\indexentry{100@{\Large\textbf{Offense}}!Web Recon!summary of|book{2}}{33}
+\indexentry{100@{\Large\textbf{Offense}}!NMAP Scanning!summary of|book{2}}{46}
+\indexentry{100@{\Large\textbf{Offense}}!NMAP Scanning!defaults|book{2}}{37}
+\indexentry{100@{\Large\textbf{Offense}}!NMAP Scanning!types|book{2}}{41}
+\indexentry{100@{\Large\textbf{Offense}}!Cloud!challenges and opportunities|book{2}}{49}
+\indexentry{100@{\Large\textbf{Offense}}!Cloud!cloud IP enumeration|book{2}}{52-55}
+\indexentry{100@{\Large\textbf{Offense}}!Cloud!host attribution|book{2}}{52-55}
+\indexentry{100@{\Large\textbf{Offense}}!Cloud!defenses|book{2}}{52-55}
+\indexentry{100@{\Large\textbf{Offense}}!Cloud!summary of|book{2}}{63-4}
+\indexentry{100@{\Large\textbf{Offense}}!Cloud!summary of|book{2}}{63-4}
+\indexentry{100@{\Large\textbf{Offense}}!SMB!challenges|book{2}}{67}
+\indexentry{100@{\Large\textbf{Offense}}!SMB!security features|book{2}}{67}
+\indexentry{100@{\Large\textbf{Offense}}!SMB!enumeration|book{2}}{69-73}
+\indexentry{100@{\Large\textbf{Offense}}!SMB!password attacks|book{2}}{77}
+\indexentry{100@{\Large\textbf{Offense}}!SMB!summary of|book{2}}{83}
+\indexentry{100@{\Large\textbf{Offense}}!SMB!defenses|book{2}}{79-81}
+\indexentry{100@{\Large\textbf{DFIR}}!Sigma Rules|book{2}}{88-98}
+\indexentry{100@{\Large\textbf{Offense}}!Password Attacks!spraying,stuffing|book{3}}{4-11}
+\indexentry{100@{\Large\textbf{Offense}}!Password Attacks!cloud|book{3}}{15}
+\indexentry{100@{\Large\textbf{Offense}}!Password Attacks!APIs|book{3}}{16}
+\indexentry{100@{\Large\textbf{Offense}}!Password Attacks!bypasses|book{3}}{20-24}
+\indexentry{100@{\Large\textbf{Offense}}!Password Attacks!Microsoft 365 summary|book{3}}{27}
+\indexentry{100@{\Large\textbf{Offense}}!Password Attacks!hashes|book{3}}{31-47}
+\indexentry{100@{\Large\textbf{Offense}}!Password Attacks!salting|book{3}}{33-5}
+\indexentry{100@{\Large\textbf{Offense}}!Password Attacks!domain controller|book{3}}{36-8}
+\indexentry{100@{\Large\textbf{Offense}}!Password Attacks!local windows|book{3}}{36-8}
+\indexentry{100@{\Large\textbf{Offense}}!Password Attacks!hashing rounds|book{3}}{42-3}
+\indexentry{100@{\Large\textbf{Offense}}!Password Attacks!hashing algorithms|book{3}}{44-5}
+\indexentry{100@{\Large\textbf{Offense}}!Password Attacks!cracking|book{3}}{49-65}
+\indexentry{100@{\Large\textbf{Offense}}!Password Attacks!defenses|book{3}}{61-4}
+\indexentry{100@{\Large\textbf{Offense}}!Cloud!storage buckets|book{3}}{68-82}
+\indexentry{100@{\Large\textbf{Offense}}!Cloud!storage bucket exploit|book{3}}{75-7}
+\indexentry{100@{\Large\textbf{Offense}}!Netcat!purposes|book{3}}{85-98}
+\indexentry{100@{\Large\textbf{Offense}}!Netcat!defenses|book{3}}{95}
+\indexentry{100@{\Large\textbf{Offense}}!Netcat!summary|book{3}}{97}
 
 
 
@@ -109,7 +299,8 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
                                        WEBSITES/TOOLS SECTION
 *****************************************************************************************************}
 \indexentry{10@{\Large\textbf{Tools}}!Powershell|book{1}}{39}
-\indexentry{10@{\Large\textbf{Tools}}!Powershell!cheatsheet|book{1}}{59,60}
+\indexentry{10@{\Large\textbf{Tools}}!Powershell!cheatsheet|book{1}}{59}
+\indexentry{10@{\Large\textbf{Tools}}!Powershell!cheatsheet|book{1}}{60}
 \indexentry{10@{\Large\textbf{Tools}}!CyberChef|book{1}}{45}
 \indexentry{10@{\Large\textbf{Tools}}!Sysinternals|book{1}}{61}
 \indexentry{10@{\Large\textbf{Tools}}!Sysinternals!Process Explorer|book{1}}{61}
@@ -129,7 +320,52 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{10@{\Large\textbf{Tools}}!Sysinternals!Process Monitor|book{1}}{96-7}
 \indexentry{10@{\Large\textbf{Tools}}!IDA Pro|book{1}}{98}
 \indexentry{10@{\Large\textbf{Tools}}!Ghidra|book{1}}{98}
-
+\indexentry{10@{\Large\textbf{Tools}}!NMAP|book{2}}{14}
+\indexentry{10@{\Large\textbf{Tools}}!NMAP}{35-47}
+\indexentry{10@{\Large\textbf{Tools}}!cert.sh|book{2}}{16}
+\indexentry{10@{\Large\textbf{Tools}}!Subfinder|book{2}}{17}
+\indexentry{10@{\Large\textbf{Tools}}!Burp Suite|book{2}}{24}
+\indexentry{10@{\Large\textbf{Tools}}!jslinksummary|book{2}}{24}
+\indexentry{10@{\Large\textbf{Tools}}!CeWL|book{2}}{25}
+\indexentry{10@{\Large\textbf{Tools}}!exiftool|book{2}}{26}
+\indexentry{10@{\Large\textbf{Tools}}!AADInternals|book{2}}{27}
+\indexentry{10@{\Large\textbf{Tools}}!haveibeenpwned|book{2}}{28}
+\indexentry{10@{\Large\textbf{Tools}}!Dehashed|book{2}}{29}
+\indexentry{10@{\Large\textbf{Tools}}!Shodan|book{2}}{30}
+\indexentry{10@{\Large\textbf{Tools}}!OSINT Framework|book{2}}{31}
+\indexentry{10@{\Large\textbf{Tools}}!JSON Query|book{2}}{50}
+\indexentry{10@{\Large\textbf{Tools}}!BuiltWith|book{2}}{51}
+\indexentry{10@{\Large\textbf{Tools}}!Masscan|book{2}}{54}
+\indexentry{10@{\Large\textbf{Tools}}!TLS-Scan|book{2}}{57-8}
+\indexentry{10@{\Large\textbf{Tools}}!openssl|book{2}}{56}
+\indexentry{10@{\Large\textbf{Tools}}!EyeWitness|book{2}}{59}
+\indexentry{10@{\Large\textbf{Tools}}!EyeWitness|book{2}}{60}
+\indexentry{10@{\Large\textbf{Tools}}!NetSShareEnum|book{2}}{70}
+\indexentry{10@{\Large\textbf{Tools}}!SMBeagle|book{2}}{71}
+\indexentry{10@{\Large\textbf{Tools}}!Copernic Desktop Search|book{2}}{71}
+\indexentry{10@{\Large\textbf{Tools}}!Samba \cmds{smb/rpcclient}|book{2}}{74-5}
+\indexentry{10@{\Large\textbf{Tools}}!LocalPasswordSpray.ps1|book{2}}{77}
+\indexentry{10@{\Large\textbf{Tools}}!DomainPasswordSpray|book{2}}{78}
+\indexentry{10@{\Large\textbf{Tools}}!Hayabusa|book{2}}{86}
+\indexentry{10@{\Large\textbf{Tools}}!Snort|book{2}}{86}
+\indexentry{10@{\Large\textbf{Tools}}!YARA|book{2}}{86}
+\indexentry{10@{\Large\textbf{Tools}}!Timeline Explorer|book{2}}{98}
+\indexentry{10@{\Large\textbf{Tools}}!Hydra|book{3}}{6}
+\indexentry{10@{\Large\textbf{Tools}}!JSON Query|book{3}}{16}
+\indexentry{10@{\Large\textbf{Tools}}!MSOLSpray|book{3}}{18}
+\indexentry{10@{\Large\textbf{Tools}}!FireProx|book{3}}{22}
+\indexentry{10@{\Large\textbf{Tools}}!MFASweep|book{3}}{23}
+\indexentry{10@{\Large\textbf{Tools}}!Impacket!secretsdump.py|book{3}}{37}
+\indexentry{10@{\Large\textbf{Tools}}!Meterpreter!Hashdump|book{3}}{38}
+\indexentry{10@{\Large\textbf{Tools}}!Mimikatz|book{3}}{38}
+\indexentry{10@{\Large\textbf{Tools}}!Hashcat|book{3}}{49-60}
+\indexentry{10@{\Large\textbf{Tools}}!Bucket Finder|book{3}}{71}
+\indexentry{10@{\Large\textbf{Tools}}!GCPBucketBrute|book{3}}{72}
+\indexentry{10@{\Large\textbf{Tools}}!gsutil|book{3}}{72}
+\indexentry{10@{\Large\textbf{Tools}}!Basic Blob Finder|book{3}}{73}
+\indexentry{10@{\Large\textbf{Tools}}!gsutil}{75}
+\indexentry{10@{\Large\textbf{Tools}}!Elastic Filebeat|book{3}}{80}
+\indexentry{10@{\Large\textbf{Tools}}!Netcat|book{3}}{85-98}
 
 
 
@@ -142,6 +378,19 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{tcpdump}|book{1}}{68-9}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{strings}|book{1}}{91}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{sha256sum}|book{1}}{91}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{dig}|book{2}}{12-4}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{exiftool}|book{2}}{26}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{nmap}|book{2}}{38-46}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{openssl}|book{2}}{56}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{smbclient}|book{2}}{74}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{rpcclient}|book{2}}{75}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{secretsdump.py}|book{3}}{37}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{hashdump}|book{3}}{38}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{shred}|book{3}}{59}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{gsutil}|book{3}}{75}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{nc}|book{3}}{88}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{nohup}|book{3}}{91}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{mkfifo}|book{3}}{94}
 
 
 
@@ -155,6 +404,7 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Stop-Process}|book{1}}{40}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-Process}|book{W}}{14-6}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-CimInstance}|book{1}}{40}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-CimInstance}|book{2}}{69}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-NetTCPConnection}|book{1}}{46}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-Service}|book{1}}{50}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-ChildItem}|book{1}}{51}
@@ -174,3 +424,16 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-ScheduledTaskInfo}|book{1}}{54}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-WinEvent}|book{1}}{55}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-FileHash}|book{1}}{91}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{nslookup}|book{2}}{12}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Import-Module}|book{2}}{27}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Invoke-AADIntReconAsOutsider}|book{2}}{27}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Invoke-AADIntUserEnumerationAsOutsider}|book{2}}{27}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Disable-WindowsOptionalFeature}|book{2}}{68}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{net.exe}|book{2}}{69}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{New-SmbMapping}|book{2}}{77}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Invoke-LocalPasswordSpray}|book{2}}{77}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-SmbSession}|book{2}}{79}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Close-SmbSession}|book{2}}{79}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{net.exe}|book{2}}{80}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-MsolUser}|book{2}}{80}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{ntdsutil.exe}|book{3}}{36-9}
