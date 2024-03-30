@@ -56,35 +56,35 @@ Scanning input file main.idx...
 !! Input index error (file = main.idx, line = 35):
    -- Missing arguments -- need two (premature LFD).
 .
-!! Input index error (file = main.idx, line = 231):
+!! Input index error (file = main.idx, line = 295):
    -- Unknown index keyword \comment.
-!! Input index error (file = main.idx, line = 232):
+!! Input index error (file = main.idx, line = 296):
    -- Missing arguments -- need two (premature LFD).
-!! Input index error (file = main.idx, line = 233):
+!! Input index error (file = main.idx, line = 297):
    -- Missing arguments -- need two (premature LFD).
 
-!! Input index error (file = main.idx, line = 298):
+!! Input index error (file = main.idx, line = 379):
    -- Unknown index keyword \comment.
-!! Input index error (file = main.idx, line = 299):
+!! Input index error (file = main.idx, line = 380):
    -- Missing arguments -- need two (premature LFD).
-!! Input index error (file = main.idx, line = 300):
+!! Input index error (file = main.idx, line = 381):
    -- Missing arguments -- need two (premature LFD).
 
-!! Input index error (file = main.idx, line = 375):
+!! Input index error (file = main.idx, line = 466):
    -- Unknown index keyword \comment.
-!! Input index error (file = main.idx, line = 376):
+!! Input index error (file = main.idx, line = 467):
    -- Missing arguments -- need two (premature LFD).
-!! Input index error (file = main.idx, line = 377):
+!! Input index error (file = main.idx, line = 468):
    -- Missing arguments -- need two (premature LFD).
 
-!! Input index error (file = main.idx, line = 400):
+!! Input index error (file = main.idx, line = 490):
    -- Unknown index keyword \comment.
-!! Input index error (file = main.idx, line = 401):
+!! Input index error (file = main.idx, line = 491):
    -- Missing arguments -- need two (premature LFD).
-!! Input index error (file = main.idx, line = 402):
+!! Input index error (file = main.idx, line = 492):
    -- Missing arguments -- need two (premature LFD).
-done (371 entries accepted, 39 rejected).
-Sorting entries......done (3419 comparisons).
-Generating output file main.ind....done (429 lines written, 0 warnings).
+done (471 entries accepted, 39 rejected).
+Sorting entries......done (4379 comparisons).
+Generating output file main.ind....done (540 lines written, 0 warnings).
 Output written in main.ind.
 Transcript written in main.ilg.

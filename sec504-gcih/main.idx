@@ -44,17 +44,17 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@encoding|book{1}}{45}
 \indexentry{1@differential analysis|book{1}}{57}
 \indexentry{1@differential analysis|book{3}}{25}
-\indexentry{1@differential analysis|book{W}}{25-31}
+\indexentry{1@differential analysis|workbook}{25-31}
 \indexentry{1@gold image|book{1}}{57}
-\indexentry{1@Windows Event Log|book{1}}{55}
+\indexentry{1@Windows!Event Log|book{1}}{55}
 \indexentry{1@CIM|book{1}}{42}
 \indexentry{1@WMI|book{1}}{42}
 \indexentry{1@LSASS|book{1}}{42-3}
 \indexentry{1@COMSPEC|book{1}}{55}
-\indexentry{1@registry keys|book{W}}{20}
-\indexentry{1@ASEPs|book{W}}{20}
-\indexentry{1@HKCU|book{W}}{20}
-\indexentry{1@HKLM|book{W}}{20}
+\indexentry{1@registry keys|workbook}{20}
+\indexentry{1@ASEPs|workbook}{20}
+\indexentry{1@HKCU|workbook}{20}
+\indexentry{1@HKLM|workbook}{20}
 \indexentry{1@Berkeley Packet Filters|book{1}}{70}
 \indexentry{1@proxies!web|book{1}}{71}
 \indexentry{1@proxies!relay|book{3}}{93}
@@ -125,7 +125,7 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@EternalBlue|book{2}}{76}
 \indexentry{1@password!reset|book{2}}{79}
 \indexentry{1@ports!SMB|book{2}}{81}
-\indexentry{1@PVLAN|book{2}}{81}
+\indexentry{1@VLAN|book{2}}{81}
 \indexentry{1@Sigma rules|book{2}}{86}
 \indexentry{1@Hayabusa|book{2}}{86}
 \indexentry{1@Snort|book{2}}{86}
@@ -141,7 +141,6 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@Microsoft 365!unified audit logging|book{3}}{25}
 \indexentry{1@Azure!smart lockout|book{3}}{19}
 \indexentry{1@AWS API gateway|book{3}}{20}
-\indexentry{1@proxies!API gateways|book{3}}{20}
 \indexentry{1@proxies!API gateways|book{3}}{20}
 \indexentry{1@authentication!Microsoft 365|book{3}}{15-6}
 \indexentry{1@authentication!multifactor!bypass|book{3}}{23}
@@ -178,7 +177,7 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@PBKDF2|book{3}}{45}
 \indexentry{1@Argon2|book{3}}{45}
 \indexentry{1@Yescrypt|book{3}}{45}
-\indexentry{1@hashing rounds!algorithms|book{3}}{45}
+\indexentry{1@hashing rounds!algorithms}{45}
 \indexentry{1@hashing rounds!algorithms|book{3}}{42}
 \indexentry{1@crypt|book{3}}{42}
 \indexentry{1@password!cracking|book{3}}{49}
@@ -220,35 +219,100 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@named pipes|book{3}}{93-4}
 \indexentry{1@relays|book{3}}{93-4}
 \indexentry{1@FIFO files|book{3}}{93-4}
-\indexentry{1@PVLAN|book{3}}{95}
+\indexentry{1@VLAN|book{3}}{95}
 \indexentry{1@password!length|book{3}}{62}
+\indexentry{1@metasploit!exploits|book{4}}{6}
+\indexentry{1@metasploit!payloads|book{4}}{8}
+\indexentry{1@metasploit!meterpreter|book{4}}{8-10}
+\indexentry{1@metasploit!auxiliary|book{4}}{5}
+\indexentry{1@metasploit!post-exploitation|book{4}}{5}
+\indexentry{1@shells!reverse|book{4}}{8}
+\indexentry{1@shells!bind|book{4}}{8}
+\indexentry{1@DLL injection|book{4}}{8}
+\indexentry{1@exploit protection|book{4}}{11}
+\indexentry{1@SELinux|book{4}}{11}
+\indexentry{1@Windows!Defender|book{4}}{11}
+\indexentry{1@Windows!Exploit Protection|book{4}}{11}
+\indexentry{1@AppArmor|book{4}}{11}
+\indexentry{1@threat hunting|book{4}}{13}
+\indexentry{1@threat hunting!RITA|book{4}}{13}
+\indexentry{1@drive-by|book{4}}{19}
+\indexentry{1@typo-squatting|book{4}}{18}
+\indexentry{1@client-side attacks|book{4}}{18}
+\indexentry{1@browsers|book{4}}{20}
+\indexentry{1@watering-hole|book{4}}{21}
+\indexentry{1@macros|book{4}}{22}
+\indexentry{1@hooks|book{4}}{29}
+\indexentry{1@web!browsers|book{4}}{20}
+\indexentry{1@browsers!hooks|book{4}}{29}
+\indexentry{1@command injection|book{4}}{39}
+\indexentry{1@command injection!blind|book{4}}{39}
+\indexentry{1@command injection!stacking|book{4}}{43}
+\indexentry{1@command injection!separators|book{4}}{46}
+\indexentry{1@web!application firewall|book{4}}{45}
+\indexentry{1@WAF|book{4}}{45}
+\indexentry{1@XSS!stored|book{4}}{52}
+\indexentry{1@XSS!reflected|book{4}}{53-5}
+\indexentry{1@XSS!polyglot|book{4}}{58}
+\indexentry{1@XSS!input filtering|book{4}}{59}
+\indexentry{1@XSS!output encoding|book{4}}{59}
+\indexentry{1@input filtering|book{4}}{59}
+\indexentry{1@input filtering}{78}
+\indexentry{1@output encoding|book{4}}{59}
+\indexentry{1@flags!Secure|book{4}}{60}
+\indexentry{1@flags!HTTPOnly|book{4}}{60}
+\indexentry{1@CSP|book{4}}{60}
+\indexentry{1@XSS!CSP|book{4}}{60}
+\indexentry{1@XSS!Secure|book{4}}{60}
+\indexentry{1@XSS!HTTPOnly|book{4}}{60}
+\indexentry{1@SQL!ORM|book{4}}{75}
+\indexentry{1@SQL!SQLMap|book{4}}{71-5}
+\indexentry{1@SQL!unions|book{4}}{69-70}
+\indexentry{1@SQL!error-based|book{4}}{69-70}
+\indexentry{1@SQL|book{4}}{66}
+\indexentry{1@ORM|book{4}}{75}
+\indexentry{1@Object Relational Mapping|book{4}}{75}
+\indexentry{1@SQL!statements formatting|book{4}}{66}
+\indexentry{1@tautology|book{4}}{67}
+\indexentry{1@SSRF!cloud|book{4}}{90}
+\indexentry{1@SSRF!exploits|book{4}}{84-9}
+\indexentry{1@SSRF!IMDS|book{4}}{90}
+\indexentry{1@IMDS|book{4}}{91}
+\indexentry{1@http192-254-169-254|book{4}}{91}
+\indexentry{1@AWS|book{4}}{92}
+\indexentry{1@AWS!CLI|book{4}}{92}
+\indexentry{1@IMDS!credential disclosure|book{4}}{94}
+\indexentry{1@IMDS!headers|book{4}}{94}
+\indexentry{1@IMDS!v2|book{4}}{97}
+\indexentry{1@proc virtual file system|book{4}}{96}
 
 
 
 
 \indexentry{9@\blankline|newpage \comment}{0}
 \indexentry{11@\blankline|newpage \comment}{0}
+\indexentry{99@\blankline|comment}{0}
 \comment{********************************************************************************************
                                        MODULES SECTION
 *****************************************************************************************************}
-\indexentry{100@{\Large\textbf{DFIR}}!Incident Response!PICERL Six-Step Process|book{1}}{21-2}
-\indexentry{100@{\Large\textbf{DFIR}}!Incident Response!DAIR Dynamic Approach|book{1}}{25-34}
-\indexentry{100@{\Large\textbf{DFIR}}!Incident Response!summary of|book{1}}{35-6}
-\indexentry{100@{\Large\textbf{DFIR}}!Live Examination!of processes|book{1}}{40-5}
-\indexentry{100@{\Large\textbf{DFIR}}!Live Examination!of network activity|book{1}}{46-9}
-\indexentry{100@{\Large\textbf{DFIR}}!Live Examination!of encoded data|book{1}}{45}
-\indexentry{100@{\Large\textbf{DFIR}}!Live Examination!of services|book{1}}{50}
-\indexentry{100@{\Large\textbf{DFIR}}!Live Examination!of registry keys|book{1}}{51-2}
-\indexentry{100@{\Large\textbf{DFIR}}!Live Examination!of accounts|book{1}}{53}
-\indexentry{100@{\Large\textbf{DFIR}}!Live Examination!of scheduled tasks|book{1}}{54}
-\indexentry{100@{\Large\textbf{DFIR}}!Live Examination!of logs|book{1}}{55}
-\indexentry{100@{\Large\textbf{DFIR}}!Live Examination!summary of|book{1}}{62}
-\indexentry{100@{\Large\textbf{DFIR}}!Network Investigations!summary of|book{1}}{73}
-\indexentry{100@{\Large\textbf{DFIR}}!Memory Investigations!summary of|book{1}}{99}
-\indexentry{100@{\Large\textbf{DFIR}}!Malware Investigations!monitoring the environment|book{1}}{92}
-\indexentry{100@{\Large\textbf{DFIR}}!Malware Investigations!summary of|book{1}}{99}
-\indexentry{100@{\Large\textbf{DFIR}}!AI for IR!summary of|book{1}}{103}
-\indexentry{100@{\Large\textbf{DFIR}}!AI for IR!summary of}{120}
+\indexentry{98@{\Large\textbf{DFIR}}!Incident Response!PICERL Six-Step Process|book{1}}{21-2}
+\indexentry{98@{\Large\textbf{DFIR}}!Incident Response!DAIR Dynamic Approach|book{1}}{25-34}
+\indexentry{98@{\Large\textbf{DFIR}}!Incident Response!summary of|book{1}}{35-6}
+\indexentry{98@{\Large\textbf{DFIR}}!Live Examination!of processes|book{1}}{40-5}
+\indexentry{98@{\Large\textbf{DFIR}}!Live Examination!of network activity|book{1}}{46-9}
+\indexentry{98@{\Large\textbf{DFIR}}!Live Examination!of encoded data|book{1}}{45}
+\indexentry{98@{\Large\textbf{DFIR}}!Live Examination!of services|book{1}}{50}
+\indexentry{98@{\Large\textbf{DFIR}}!Live Examination!of registry keys|book{1}}{51-2}
+\indexentry{98@{\Large\textbf{DFIR}}!Live Examination!of accounts|book{1}}{53}
+\indexentry{98@{\Large\textbf{DFIR}}!Live Examination!of scheduled tasks|book{1}}{54}
+\indexentry{98@{\Large\textbf{DFIR}}!Live Examination!of logs|book{1}}{55}
+\indexentry{98@{\Large\textbf{DFIR}}!Live Examination!summary of|book{1}}{62}
+\indexentry{98@{\Large\textbf{DFIR}}!Network Investigations!summary of|book{1}}{73}
+\indexentry{98@{\Large\textbf{DFIR}}!Memory Investigations!summary of|book{1}}{99}
+\indexentry{98@{\Large\textbf{DFIR}}!Malware Investigations!monitoring the environment|book{1}}{92}
+\indexentry{98@{\Large\textbf{DFIR}}!Malware Investigations!summary of|book{1}}{99}
+\indexentry{98@{\Large\textbf{DFIR}}!AI for IR!summary of|book{1}}{103}
+\indexentry{98@{\Large\textbf{DFIR}}!AI for IR!summary of}{120}
 \indexentry{100@{\Large\textbf{Offense}}!Discovery and Enumeration!defense against|book{2}}{18}
 \indexentry{100@{\Large\textbf{Offense}}!Discovery and Enumeration!summary|book{2}}{19}
 \indexentry{100@{\Large\textbf{Offense}}!Discovery and Enumeration!DNS|book{2}}{12-4}
@@ -271,7 +335,7 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{100@{\Large\textbf{Offense}}!SMB!password attacks|book{2}}{77}
 \indexentry{100@{\Large\textbf{Offense}}!SMB!summary of|book{2}}{83}
 \indexentry{100@{\Large\textbf{Offense}}!SMB!defenses|book{2}}{79-81}
-\indexentry{100@{\Large\textbf{DFIR}}!Sigma Rules|book{2}}{88-98}
+\indexentry{98@{\Large\textbf{DFIR}}!Sigma Rules|book{2}}{88-98}
 \indexentry{100@{\Large\textbf{Offense}}!Password Attacks!spraying,stuffing|book{3}}{4-11}
 \indexentry{100@{\Large\textbf{Offense}}!Password Attacks!cloud|book{3}}{15}
 \indexentry{100@{\Large\textbf{Offense}}!Password Attacks!APIs|book{3}}{16}
@@ -290,9 +354,26 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{100@{\Large\textbf{Offense}}!Netcat!purposes|book{3}}{85-98}
 \indexentry{100@{\Large\textbf{Offense}}!Netcat!defenses|book{3}}{95}
 \indexentry{100@{\Large\textbf{Offense}}!Netcat!summary|book{3}}{97}
-
-
-
+\indexentry{100@{\Large\textbf{Offense}}!Metasploit!payloads|book{4}}{8}
+\indexentry{100@{\Large\textbf{Offense}}!Metasploit!defenses|book{4}}{11}
+\indexentry{100@{\Large\textbf{Offense}}!Metasploit!summary|book{4}}{14-5}
+\indexentry{100@{\Large\textbf{Offense}}!Drive-By Attacks!summary|book{4}}{34}
+\indexentry{100@{\Large\textbf{Offense}}!Drive-By Attacks!defense|book{4}}{32-3}
+\indexentry{100@{\Large\textbf{Offense}}!Command Injection!defense|book{4}}{45}
+\indexentry{100@{\Large\textbf{Offense}}!Command Injection!summary|book{4}}{46-7}
+\indexentry{100@{\Large\textbf{Offense}}!XSS!summary|book{4}}{61-2}
+\indexentry{100@{\Large\textbf{Offense}}!XSS!impact|book{4}}{56}
+\indexentry{100@{\Large\textbf{Offense}}!XSS!defense|book{4}}{59-60}
+\indexentry{100@{\Large\textbf{Offense}}!SQL Injection!defense|book{4}}{78}
+\indexentry{100@{\Large\textbf{Offense}}!SQL Injection!summary|book{4}}{80-1}
+\indexentry{100@{\Large\textbf{Offense}}!SQL Injection!defense|book{4}}{78}
+\indexentry{100@{\Large\textbf{Offense}}!SQL Injection!cloud|book{4}}{75}
+\indexentry{100@{\Large\textbf{Offense}}!SSRF!cloud|book{4}}{90-9}
+\indexentry{100@{\Large\textbf{Offense}}!Cloud!SSRF|book{4}}{90-9}
+\indexentry{100@{\Large\textbf{Offense}}!Cloud!IMDS|book{4}}{90}
+\indexentry{100@{\Large\textbf{Offense}}!SSRF!summary|book{4}}{98-9}
+\indexentry{100@{\Large\textbf{Offense}}!SSRF!defense|book{4}}{97}
+\indexentry{100@{\Large\textbf{Offense}}!Cloud!IMDSv2|book{4}}{97}
 
 
 \comment{********************************************************************************************
@@ -317,7 +398,7 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{10@{\Large\textbf{Tools}}!VirusTotal|book{1}}{89}
 \indexentry{10@{\Large\textbf{Tools}}!Hybrid Analysis|book{1}}{89}
 \indexentry{10@{\Large\textbf{Tools}}!Regshot|book{1}}{94-5}
-\indexentry{10@{\Large\textbf{Tools}}!Sysinternals!Process Monitor|book{1}}{96-7}
+\indexentry{10@{\Large\textbf{Tools}}!Sysinternals!Process Monitor}{96-7}
 \indexentry{10@{\Large\textbf{Tools}}!IDA Pro|book{1}}{98}
 \indexentry{10@{\Large\textbf{Tools}}!Ghidra|book{1}}{98}
 \indexentry{10@{\Large\textbf{Tools}}!NMAP|book{2}}{14}
@@ -366,10 +447,20 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{10@{\Large\textbf{Tools}}!gsutil}{75}
 \indexentry{10@{\Large\textbf{Tools}}!Elastic Filebeat|book{3}}{80}
 \indexentry{10@{\Large\textbf{Tools}}!Netcat|book{3}}{85-98}
-
-
-
-
+\indexentry{10@{\Large\textbf{Tools}}!Metasploit and Armitage|book{4}}{6}
+\indexentry{10@{\Large\textbf{Tools}}!SELinux|book{4}}{11}
+\indexentry{10@{\Large\textbf{Tools}}!Windows Defender|book{4}}{11}
+\indexentry{10@{\Large\textbf{Tools}}!AppArmor|book{4}}{11}
+\indexentry{10@{\Large\textbf{Tools}}!RITA|book{4}}{13}
+\indexentry{10@{\Large\textbf{Tools}}!msfvenom|book{4}}{27-31}
+\indexentry{10@{\Large\textbf{Tools}}!BeEF|book{4}}{29}
+\indexentry{10@{\Large\textbf{Tools}}!Java Encoder Project|book{4}}{59}
+\indexentry{10@{\Large\textbf{Tools}}!HTML Purifier|book{4}}{59}
+\indexentry{10@{\Large\textbf{Tools}}!Joi|book{4}}{59}
+\indexentry{10@{\Large\textbf{Tools}}!ModSecurity|book{4}}{79}
+\indexentry{10@{\Large\textbf{Tools}}!SQLMap|book{4}}{71-4}
+\indexentry{10@{\Large\textbf{Tools}}!AWS-CLI|book{4}}{92}
+\indexentry{10@{\Large\textbf{Tools}}!AWS Cloudwatch|book{4}}{97}
 
 
 \comment{********************************************************************************************
@@ -391,9 +482,8 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{nc}|book{3}}{88}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{nohup}|book{3}}{91}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{mkfifo}|book{3}}{94}
-
-
-
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{msfvenom}|book{4}}{27}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{msfconsole}|book{4}}{28}
 
 
 
@@ -402,23 +492,23 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 *****************************************************************************************************}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-Process}|book{1}}{40}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Stop-Process}|book{1}}{40}
-\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-Process}|book{W}}{14-6}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-Process}|workbook}{14-6}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-CimInstance}|book{1}}{40}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-CimInstance}|book{2}}{69}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-NetTCPConnection}|book{1}}{46}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-Service}|book{1}}{50}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-ChildItem}|book{1}}{51}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-ItemProperty}|book{1}}{51}
-\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Remove-ItemProperty}|book{W}}{23}
-\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Remove-ItemProperty}|book{W}}{24}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Remove-ItemProperty}|workbook}{23}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Remove-ItemProperty}|workbook}{24}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-LocalUser}|book{1}}{53}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-LocalGroup}|book{1}}{53}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-LocalGroupMember}|book{1}}{53}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Where-Object}|book{1}}{53}
-\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Where-Object}|book{W}}{15-7}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Where-Object}|workbook}{15-7}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Format-List}|book{1}}{50}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Select-Object}|book{1}}{40}
-\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Select-Object}|book{W}}{15-7}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Select-Object}|workbook}{15-7}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-ScheduledTask}|book{1}}{54}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Export-ScheduledTask}|book{1}}{54}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{Get-ScheduledTaskInfo}|book{1}}{54}
