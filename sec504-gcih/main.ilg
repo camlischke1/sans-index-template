@@ -56,35 +56,38 @@ Scanning input file main.idx...
 !! Input index error (file = main.idx, line = 35):
    -- Missing arguments -- need two (premature LFD).
 .
-!! Input index error (file = main.idx, line = 295):
+!! Input index error (file = main.idx, line = 364):
    -- Unknown index keyword \comment.
-!! Input index error (file = main.idx, line = 296):
+!! Input index error (file = main.idx, line = 365):
    -- Missing arguments -- need two (premature LFD).
-!! Input index error (file = main.idx, line = 297):
+!! Input index error (file = main.idx, line = 366):
    -- Missing arguments -- need two (premature LFD).
 
-!! Input index error (file = main.idx, line = 379):
+!! Input index error (file = main.idx, line = 477):
    -- Unknown index keyword \comment.
-!! Input index error (file = main.idx, line = 380):
+!! Input index error (file = main.idx, line = 478):
    -- Missing arguments -- need two (premature LFD).
-!! Input index error (file = main.idx, line = 381):
+!! Input index error (file = main.idx, line = 479):
    -- Missing arguments -- need two (premature LFD).
 
-!! Input index error (file = main.idx, line = 466):
+!! Input index error (file = main.idx, line = 583):
    -- Unknown index keyword \comment.
-!! Input index error (file = main.idx, line = 467):
+!! Input index error (file = main.idx, line = 584):
    -- Missing arguments -- need two (premature LFD).
-!! Input index error (file = main.idx, line = 468):
+!! Input index error (file = main.idx, line = 585):
    -- Missing arguments -- need two (premature LFD).
 
-!! Input index error (file = main.idx, line = 490):
+!! Input index error (file = main.idx, line = 607):
    -- Unknown index keyword \comment.
-!! Input index error (file = main.idx, line = 491):
+!! Input index error (file = main.idx, line = 608):
    -- Missing arguments -- need two (premature LFD).
-!! Input index error (file = main.idx, line = 492):
+!! Input index error (file = main.idx, line = 609):
    -- Missing arguments -- need two (premature LFD).
-done (471 entries accepted, 39 rejected).
-Sorting entries......done (4379 comparisons).
-Generating output file main.ind....done (540 lines written, 0 warnings).
+done (597 entries accepted, 39 rejected).
+Sorting entries.......done (5814 comparisons).
+Generating output file main.ind....
+## Warning (input = main.idx, line = 577; output = main.ind, line = 467):
+   -- Conflicting entries: multiple encaps for the same page under same key.
+done (686 lines written, 1 warning).
 Output written in main.ind.
 Transcript written in main.ilg.
