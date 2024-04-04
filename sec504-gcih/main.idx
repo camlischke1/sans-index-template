@@ -473,6 +473,7 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{100@{\Large\textbf{Post-Exploitation}}!Cloud!exfiltration|book{5}}{72-3}
 \indexentry{100@{\Large\textbf{Post-Exploitation}}!Cloud!exfiltration defenses|book{5}}{75-80}
 \indexentry{100@{\Large\textbf{Post-Exploitation}}!Cloud!summary|book{5}}{81}
+\indexentry{100@{\Large\textbf{Post-Exploitation}}!Cloud!logging|book{5}}{79}
 
 \comment{********************************************************************************************
                                        WEBSITES/TOOLS SECTION
@@ -648,3 +649,37 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{netsh}|book{5}}{25}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{net.exe}|book{5}}{41}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Windows}!\cmds{mofcomp}|book{5}}{43}
+
+
+
+
+\indexentry{199@\blankline|newpage \comment}{0}
+\comment{********************************************************************************************
+                                       Labs COMMANDS SECTION
+*****************************************************************************************************}
+\indexentry{200@{\Large\textbf{Labs}}!Live Investigation!1.1 Windows Host|lab{1}}{13}
+\indexentry{200@{\Large\textbf{Labs}}!Live Investigation!1.2 Networks|lab{1}}{45}
+\indexentry{200@{\Large\textbf{Labs}}!Live Investigation!1.3 Memory|lab{1}}{45}
+\indexentry{200@{\Large\textbf{Labs}}!Live Investigation!1.4 Malware|lab{1}}{45}
+\indexentry{201@ !Recon, Scanning, Enumeration!2.1 DNS|lab{1}}{116}
+\indexentry{201@ !Recon, Scanning, Enumeration!2.2 NMAP|lab{1}}{139}
+\indexentry{201@ !Recon, Scanning, Enumeration!2.3 Cloud|lab{1}}{162}
+\indexentry{201@ !Recon, Scanning, Enumeration!2.4 SMB|lab{1}}{180}
+\indexentry{202@ !Threat Analysis!2.5 Hayabusa|lab{1}}{204}
+\indexentry{203@ !Password Attacks!3.1 Metasploit|lab{1}}{241}
+\indexentry{203@ !Password Attacks!3.2 Microsoft 365|lab{1}}{261}
+\indexentry{203@ !Password Attacks!3.3 Hashcat|lab{1}}{290}
+\indexentry{201@ !Recon, Scanning, Enumeration!3.4 Cloud Bucket Discovery|lab{1}}{317}
+\indexentry{205@ !Post-Exploitation!3.4 Netcat|lab{1}}{350}
+\indexentry{204@ !Remote Attacks!4.1 Metasploit|lab{2}}{1}
+\indexentry{204@ !Remote Attacks!4.2 BeEF|lab{2}}{31}
+\indexentry{204@ !Remote Attacks!4.3 Command Injection|lab{2}}{44}
+\indexentry{204@ !Remote Attacks!4.4 XSS|lab{2}}{57}
+\indexentry{204@ !Remote Attacks!4.5 SQL Injection|lab{2}}{77}
+\indexentry{204@ !Remote Attacks!4.6 Cloud SSRF and IMDS|lab{2}}{98}
+\indexentry{205@ !Post-Exploitation!5.1 Allow List Bypass|lab{2}}{124}
+\indexentry{205@ !Post-Exploitation!5.2 Pivoting|lab{2}}{148}
+\indexentry{205@ !Post-Exploitation!5.3 Responder|lab{2}}{170}
+\indexentry{205@ !Post-Exploitation!5.4 Metasploit|lab{2}}{180}
+\indexentry{205@ !Threat Analysis!5.5 RITA|lab{2}}{209}
+\indexentry{205@ !Post-Exploitation!5.6 Cloud Configurations|lab{2}}{227}
