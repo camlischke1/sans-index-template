@@ -580,6 +580,8 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{10@{\Large\textbf{Tools}}!AzViz|book{5}}{76}
 \indexentry{10@{\Large\textbf{Tools}}!Google Network Topology Tool|book{5}}{76}
 \indexentry{10@{\Large\textbf{Tools}}!ScoutSuite|book{5}}{77}
+\indexentry{10@{\Large\textbf{Tools}}!findbeacons.py|lab{1}}{52}
+\indexentry{10@{\Large\textbf{Tools}}!Volatility|lab{1}}{63}
 
 \comment{********************************************************************************************
                                        LINUX COMMANDS SECTION
@@ -602,6 +604,9 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{mkfifo}|book{3}}{94}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{msfvenom}|book{4}}{27}
 \indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{msfconsole}|book{4}}{28}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{awk}|lab{1}}{51}
+\indexentry{10@{\Large\textbf{Commands}}!\textbf{Linux}!\cmds{tcpdump}|lab{1}}{55}
+
 
 
 
