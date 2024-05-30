@@ -9,4 +9,4 @@ delim_n ", "
 group_skip "\n\n\\indexspace\n\\indexspace\n"
 line_max 60
 symhead_positive "Other"
-numhead_positive "Index"
+numhead_positive "Terms"

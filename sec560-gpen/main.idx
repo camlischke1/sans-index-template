@@ -76,6 +76,52 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@setuid|book{1}}{51}
 \indexentry{1@world-writeable|book{1}}{51}
 \indexentry{1@sudo|book{1}}{52}
+\indexentry{1@junior testers|book{1}}{61}
+\indexentry{1@recon!internal PCI|book{1}}{61}
+\indexentry{1@PCI|book{1}}{61}
+\indexentry{1@recon!zero-touch|book{1}}{62}
+\indexentry{1@recon!light-touch|book{1}}{62}
+\indexentry{1@recon!organizational|book{1}}{67-9}
+\indexentry{1@recon!user|book{1}}{82-9}
+\indexentry{1@user recon|book{1}}{82-9}
+\indexentry{1@recon!infrastructure|book{1}}{71-81}
+\indexentry{1@infrastructure recon|book{1}}{71-81}
+\indexentry{1@admin hunting|book{1}}{63}
+\indexentry{1@recon!ethics|book{1}}{64}
+\indexentry{1@organizational recon|book{1}}{67-9}
+\indexentry{1@mergers \& acquisitions|book{1}}{67}
+\indexentry{1@press releases|book{1}}{68}
+\indexentry{1@annual reports|book{1}}{68}
+\indexentry{1@html application|book{1}}{68}
+\indexentry{1@competitive intel|book{1}}{68}
+\indexentry{1@common subdomains|book{1}}{72}
+\indexentry{1@ASNs|book{1}}{75}
+\indexentry{1@autonomous systems numbers|book{1}}{75}
+\indexentry{1@regional internet registries|book{1}}{78}
+\indexentry{1@RIRs|book{1}}{78}
+\indexentry{1@whois|book{1}}{78}
+\indexentry{1@CIDR|book{1}}{78}
+\indexentry{1@BGP|book{1}}{78}
+\indexentry{1@certificate transparency|book{1}}{79}
+\indexentry{1@TLS|book{1}}{79}
+\indexentry{1@data breaches|book{1}}{85}
+\indexentry{1@data dump forums|book{1}}{85}
+\indexentry{1@torrents|book{1}}{85}
+\indexentry{1@job reqs|book{1}}{85}
+\indexentry{1@scans!types|book{1}}{94}
+\indexentry{1@scans!efficiency|book{1}}{96}
+\indexentry{1@scans!asynchronous|book{1}}{96}
+\indexentry{1@network sweep|book{1}}{94}
+\indexentry{1@port scan|book{1}}{94}
+\indexentry{1@os fingerprinting|book{1}}{94}
+\indexentry{1@version scan|book{1}}{94}
+\indexentry{1@vulnerability scan|book{1}}{94}
+\indexentry{1@tcp|book{1}}{99-102}
+\indexentry{1@scans!tcp|book{1}}{103-4}
+\indexentry{1@scans!tcp}{115-6}
+\indexentry{1@udp|book{1}}{105}
+\indexentry{1@scans!udp|book{1}}{106-7}
+\indexentry{1@scans!udp|}{117}
 
 
 
@@ -84,8 +130,9 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 
 
 
-\indexentry{9@\blankline|comment}{0}
-\indexentry{19@\blankline|comment}{0}
+
+
+\indexentry{9@\blankline|newpage \comment}{0}
 \comment{********************************************************************************************
                                        WEBSITES/TOOLS SECTION
 *****************************************************************************************************}
@@ -93,6 +140,20 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Sites}}!MITRE CVE|book{1}}{37}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!MITRE ATTACK|book{1}}{38}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!Dradis Reporting|book{1}}{40}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!DNSRecon|book{1}}{73-4}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!DNSDumpster|book{1}}{75-7}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!RIRs|book{1}}{78}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!crt.sh|book{1}}{79}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Shodan|book{1}}{80-1}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Hunter.io|book{1}}{83}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!phonebook.cz|book{1}}{84}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!HaveIBeenPwned|book{1}}{85}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!DeHashed|book{1}}{85}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Monster.com|book{1}}{86}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!GatherContacts|book{1}}{86}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!ScanRand|book{1}}{96}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Masscan|book{1}}{96}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!nmap|book{1}}{109-21}
 
 
 
@@ -101,7 +162,7 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 
 
 
-
+\indexentry{19@\blankline|comment}{0}
 \comment{********************************************************************************************
                                        COMMANDS SECTION
 *****************************************************************************************************}
