@@ -122,9 +122,44 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@udp|book{1}}{105}
 \indexentry{1@scans!udp|book{1}}{106-7}
 \indexentry{1@scans!udp|}{117}
-
-
-
+\indexentry{1@scans!parallel|book{1}}{121}
+\indexentry{1@parallel scans|book{1}}{121}
+\indexentry{1@tcp!RST|book{1}}{122}
+\indexentry{1@scans!tcp}{122}
+\indexentry{1@scans!ultrafast|book{1}}{122}
+\indexentry{1@scans!stateless|book{1}}{122}
+\indexentry{1@os fingerprinting!nmap|book{1}}{129}
+\indexentry{1@vuln scanning|book{1}}{145-51}
+\indexentry{1@scans!vulnerability|book{1}}{145-51}
+\indexentry{1@vuln scanning!unauthenticated|book{1}}{148}
+\indexentry{1@vuln scanning!authenticated|book{1}}{148}
+\indexentry{1@vuln scanning!agent-based|book{1}}{148}
+\indexentry{1@vuln scanning!plugins|book{1}}{149}
+\indexentry{1@plugins|book{1}}{149}
+\indexentry{1@initial access|book{2}}{6}
+\indexentry{1@credential stuffing|book{2}}{9-10}
+\indexentry{1@password!guessing|book{2}}{11-22}
+\indexentry{1@usernames|book{2}}{14}
+\indexentry{1@lockout|book{2}}{15}
+\indexentry{1@lockout!threshold|book{2}}{16}
+\indexentry{1@lockout!observation window|book{2}}{16}
+\indexentry{1@lockout!duration|book{2}}{16}
+\indexentry{1@password!spraying|book{2}}{18}
+\indexentry{1@exploitation|book{2}}{26-8}
+\indexentry{1@exploitation!types|book{2}}{30}
+\indexentry{1@exploitation!server-side|book{2}}{31}
+\indexentry{1@intrusion prevention|book{2}}{31}
+\indexentry{1@firewall|book{2}}{31}
+\indexentry{1@exploitation!client-side|book{2}}{32-7}
+\indexentry{1@exploitation!local privesc|book{2}}{30}
+\indexentry{1@browsers|book{2}}{33}
+\indexentry{1@document-reading apps|book{2}}{33}
+\indexentry{1@runtime env|book{2}}{33}
+\indexentry{1@exploitation!social engineering|book{2}}{34}
+\indexentry{1@guardrails|book{2}}{35}
+\indexentry{1@exploitation!payload delivery|book{2}}{36}
+\indexentry{1@payload delivery|book{2}}{36}
+\indexentry{1@representative sample|book{2}}{37}
 
 
 
@@ -154,6 +189,24 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Sites}}!ScanRand|book{1}}{96}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!Masscan|book{1}}{96}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!nmap|book{1}}{109-21}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!nmap!limitations|book{1}}{121}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Masscan}{123-5}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!nmap!os fingerprinting|book{1}}{129}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!nmap}{129-33}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Netcat|book{1}}{133-8}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!EyeWitness|book{1}}{140-3}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!nmap!limitations}{151}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!nmap!scripting engine|book{1}}{153-6}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!nmap!script.db|book{1}}{156}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!pw-inspector|book{2}}{13}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!LockoutStatus.exe|book{2}}{15}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!ALockout.dll|book{2}}{15}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!GetFFGP!FineGrainedPassPolicy|book{2}}{18}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Patator|book{2}}{19}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Hydra|book{2}}{20-2}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!NCrack|book{2}}{19}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Metasploit|book{2}}{19}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Core IMPACT|book{2}}{36}
 
 
 
@@ -168,3 +221,4 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 *****************************************************************************************************}
 \indexentry{10@{\Large\textbf{Commands}}!\cmds{netstat} connections|book{1}}{53}
 \indexentry{10@{\Large\textbf{Commands}}!\cmds{lsof} connections|book{1}}{53}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{net.exe}|book{2}}{16}
