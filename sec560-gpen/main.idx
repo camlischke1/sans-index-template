@@ -67,13 +67,13 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@dedicated systems|book{1}}{36}
 \indexentry{1@linux!filesystem|book{1}}{46}
 \indexentry{1@linux!permissions|book{1}}{50}
-\indexentry{1@linux!setuid|book{1}}{51}
+\indexentry{1@linux!suid|book{1}}{51}
 \indexentry{1@linux!connections|book{1}}{51}
 \indexentry{1@ephemeral shell|book{1}}{47}
 \indexentry{1@shells!ephemeral|book{1}}{47}
 \indexentry{1@shells!prompts|book{1}}{55}
 \indexentry{1@permissions|book{1}}{50}
-\indexentry{1@setuid|book{1}}{51}
+\indexentry{1@suid|book{1}}{51}
 \indexentry{1@world-writeable|book{1}}{51}
 \indexentry{1@sudo|book{1}}{52}
 \indexentry{1@junior testers|book{1}}{61}
@@ -151,7 +151,7 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@intrusion prevention|book{2}}{31}
 \indexentry{1@firewall|book{2}}{31}
 \indexentry{1@exploitation!client-side|book{2}}{32-7}
-\indexentry{1@exploitation!local privesc|book{2}}{30}
+\indexentry{1@exploitation!local privesc|book{2}}{38}
 \indexentry{1@browsers|book{2}}{33}
 \indexentry{1@document-reading apps|book{2}}{33}
 \indexentry{1@runtime env|book{2}}{33}
@@ -160,7 +160,57 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@exploitation!payload delivery|book{2}}{36}
 \indexentry{1@payload delivery|book{2}}{36}
 \indexentry{1@representative sample|book{2}}{37}
-
+\indexentry{1@race conditions|book{2}}{39}
+\indexentry{1@kernel attacks|book{2}}{39}
+\indexentry{1@suid|book{2}}{39}
+\indexentry{1@privileged process|book{2}}{39}
+\indexentry{1@exploitation!framework|book{2}}{41}
+\indexentry{1@metasploit!modules|book{2}}{44}
+\indexentry{1@metasploit!exploits|book{2}}{44-7}
+\indexentry{1@exploitation!windows|book{2}}{45}
+\indexentry{1@psexec|book{2}}{45}
+\indexentry{1@metasploit!reliability|book{2}}{47}
+\indexentry{1@metasploit!payloads|book{2}}{44-51}
+\indexentry{1@smb|book{2}}{46}
+\indexentry{1@browser|book{2}}{46}
+\indexentry{1@scada|book{2}}{46}
+\indexentry{1@singles|book{2}}{48}
+\indexentry{1@stagers|book{2}}{48}
+\indexentry{1@stages|book{2}}{48}
+\indexentry{1@exploitation!windows}{49-51}
+\indexentry{1@metasploit!meterpreter|book{2}}{53-60}
+\indexentry{1@meterpreter|book{2}}{53-60}
+\indexentry{1@assumed breach|book{2}}{68}
+\indexentry{1@c2|book{2}}{72}
+\indexentry{1@jitter|book{2}}{72}
+\indexentry{1@polling interval|book{2}}{72}
+\indexentry{1@dynamic code generation|book{2}}{77}
+\indexentry{1@parent process spoofing|book{2}}{80}
+\indexentry{1@guardrails}{80}
+\indexentry{1@smb!named pipes|book{2}}{80}
+\indexentry{1@tcp!pivots|book{2}}{80}
+\indexentry{1@implant chaining|book{2}}{80}
+\indexentry{1@daisy-chaining|book{2}}{80}
+\indexentry{1@chaining|book{2}}{80}
+\indexentry{1@authenticated proxy|book{2}}{89}
+\indexentry{1@opsec|book{2}}{89}
+\indexentry{1@payloads|book{2}}{97}
+\indexentry{1@office!macros|book{2}}{98}
+\indexentry{1@vba|book{2}}{98}
+\indexentry{1@office!dde|book{2}}{100}
+\indexentry{1@dynamic data exchange|book{2}}{100}
+\indexentry{1@file!iso|book{2}}{101}
+\indexentry{1@file!zip|book{2}}{102}
+\indexentry{1@file!lnk-shortcuts|book{2}}{103}
+\indexentry{1@tactics|book{2}}{108}
+\indexentry{1@post-exploitation|book{2}}{108}
+\indexentry{1@file-transfer|book{2}}{109-12}
+\indexentry{1@situational awareness|book{2}}{114}
+\indexentry{1@pilfering|book{2}}{115-6}
+\indexentry{1@situational awareness!linux|book{2}}{118-22}
+\indexentry{1@sam database|book{2}}{122}
+\indexentry{1@keyrings|book{2}}{122}
+\indexentry{1@suid}{120}
 
 
 
@@ -207,6 +257,26 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Sites}}!NCrack|book{2}}{19}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!Metasploit|book{2}}{19}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!Core IMPACT|book{2}}{36}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!LinuxExploitSuggester|book{2}}{39}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!LinPEAS|book{2}}{39}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Cobalt Strike|book{2}}{39}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Immunity CANVAS|book{2}}{39}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Metasploit|book{2}}{42-60}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Metasploit!Meterpreter|book{2}}{53-60}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Verizon DBIR|book{2}}{69}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!C2 Matrix|book{2}}{73}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Sliver|book{2}}{76-83}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Sliver!commands|book{2}}{81}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Sliver!payloads|book{2}}{79-80}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Sliver!server-client|book{2}}{82}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Sliver!payloads}{83}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Empire|book{2}}{88-92}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Empire!modules|book{2}}{90-2}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!PowerBreach|book{2}}{90}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Posh-SecMod|book{2}}{90}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!PowerSploit|book{2}}{90}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!PowerUp|book{2}}{90}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!PowerView|book{2}}{90}
 
 
 
@@ -222,3 +292,8 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{10@{\Large\textbf{Commands}}!\cmds{netstat} connections|book{1}}{53}
 \indexentry{10@{\Large\textbf{Commands}}!\cmds{lsof} connections|book{1}}{53}
 \indexentry{10@{\Large\textbf{Commands}}!\cmds{net.exe}|book{2}}{16}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{base64}|book{2}}{112}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{netstat} connections|book{2}}{116}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{arp}|book{2}}{116}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{ip}|book{2}}{116}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{ss}|book{2}}{116}
