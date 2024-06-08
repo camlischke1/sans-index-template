@@ -206,11 +206,36 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@post-exploitation|book{2}}{108}
 \indexentry{1@file-transfer|book{2}}{109-12}
 \indexentry{1@situational awareness|book{2}}{114}
-\indexentry{1@pilfering|book{2}}{115-6}
+\indexentry{1@file!pilfering|book{2}}{115-6}
 \indexentry{1@situational awareness!linux|book{2}}{118-22}
 \indexentry{1@sam database|book{2}}{122}
 \indexentry{1@keyrings|book{2}}{122}
 \indexentry{1@suid}{120}
+\indexentry{1@pgp|book{2}}{122}
+\indexentry{1@env variable|book{2}}{124}
+\indexentry{1@file!searching|book{2}}{125}
+\indexentry{1@domain!administration|book{2}}{126}
+\indexentry{1@domain!users|book{2}}{127}
+\indexentry{1@sysvol|book{2}}{127}
+\indexentry{1@logon script|book{2}}{127}
+\indexentry{1@local groups|book{2}}{128}
+\indexentry{1@domain!groups|book{2}}{129}
+\indexentry{1@domain!admin|book{2}}{129}
+\indexentry{1@domain!cleanup|book{2}}{130}
+\indexentry{1@windows!firewall|book{2}}{131}
+\indexentry{1@wlan|book{2}}{131}
+\indexentry{1@ipsec|book{2}}{131}
+\indexentry{1@dhcpclient|book{2}}{131}
+\indexentry{1@firewall|book{2}}{131}
+\indexentry{1@windows!files|book{2}}{132}
+\indexentry{1@file!searching}{132}
+\indexentry{1@file!pilfering}{132}
+\indexentry{1@windows!registry|book{2}}{133}
+\indexentry{1@registry|book{2}}{133}
+\indexentry{1@windows!exploit obfuscation|book{2}}{134}
+\indexentry{1@obfuscation|book{2}}{134}
+\indexentry{1@powershell!obfuscation|book{2}}{134}
+
 
 
 
@@ -277,6 +302,12 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Sites}}!PowerSploit|book{2}}{90}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!PowerUp|book{2}}{90}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!PowerView|book{2}}{90}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!PowerView}{134}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!PowerSploit}{134}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Chameleon|book{2}}{134}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!AD Explorer|book{2}}{135}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Seatbelt|book{2}}{137-9}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!GhostPack|book{2}}{137-9}
 
 
 
@@ -297,3 +328,12 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{10@{\Large\textbf{Commands}}!\cmds{arp}|book{2}}{116}
 \indexentry{10@{\Large\textbf{Commands}}!\cmds{ip}|book{2}}{116}
 \indexentry{10@{\Large\textbf{Commands}}!\cmds{ss}|book{2}}{116}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{set}|book{2}}{124}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{dir}|book{2}}{124}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{net/net1}|book{2}}{126-30}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{netsh}|book{2}}{131}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{type}|book{2}}{132}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{more}|book{2}}{132}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{find}|book{2}}{132}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{findstr}|book{2}}{132}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{reg}|book{2}}{133}
