@@ -235,6 +235,34 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@windows!exploit obfuscation|book{2}}{134}
 \indexentry{1@obfuscation|book{2}}{134}
 \indexentry{1@powershell!obfuscation|book{2}}{134}
+\indexentry{1@privesc!local|book{2}}{38}
+\indexentry{1@privesc!linux!kernel|book{3}}{8}
+\indexentry{1@dirty cow|book{3}}{8}
+\indexentry{1@kernel|book{3}}{8}
+\indexentry{1@privesc!linux!service|book{3}}{9}
+\indexentry{1@shared object|book{3}}{9}
+\indexentry{1@privesc!linux!files|book{3}}{10}
+\indexentry{1@file!world-writeable|book{3}}{10}
+\indexentry{1@file!permissions|book{3}}{10}
+\indexentry{1@privesc!linux!suid|book{3}}{11}
+\indexentry{1@suid|book{3}}{11}
+\indexentry{1@privesc!windows!dll hijacking|book{3}}{14}
+\indexentry{1@privesc!windows!writable service executables|book{3}}{14}
+\indexentry{1@privesc!windows!alwaysinstallelevated|book{3}}{14}
+\indexentry{1@privesc!windows!unattended install files|book{3}}{15-6}
+\indexentry{1@file!install files|book{3}}{15-6}
+\indexentry{1@privesc!windows!group policy preferences|book{3}}{17-8}
+\indexentry{1@group policy!preferences|book{3}}{17-8}
+\indexentry{1@group policy!objects|book{3}}{17}
+\indexentry{1@unattend.xml|book{3}}{15-6}
+\indexentry{1@C:/Windows/Panther|book{3}}{15-6}
+\indexentry{1@cpassword|book{3}}{15-6}
+\indexentry{1@privesc!windows!unquoted paths|book{3}}{20}
+\indexentry{1@exploit!unquoted paths|book{3}}{20}
+\indexentry{1@unquoted paths|book{3}}{20}
+\indexentry{1@user account control|book{3}}{21-2}
+\indexentry{1@user account control!bypass|book{3}}{23}
+\indexentry{1@ingestors|book{3}}{30}
 
 
 
@@ -308,6 +336,15 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Sites}}!AD Explorer|book{2}}{135}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!Seatbelt|book{2}}{137-9}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!GhostPack|book{2}}{137-9}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!GTFOBins|book{3}}{12}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Empire|book{3}}{23}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Metasploit|book{3}}{23}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!UACME|book{3}}{23}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!BeRoot|book{3}}{24}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Watson|book{3}}{24}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!PowerUp|book{3}}{25}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!LOLBAS|book{3}}{26}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!BloodHound|book{3}}{30-5}
 
 
 
@@ -337,3 +374,7 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{10@{\Large\textbf{Commands}}!\cmds{find}|book{2}}{132}
 \indexentry{10@{\Large\textbf{Commands}}!\cmds{findstr}|book{2}}{132}
 \indexentry{10@{\Large\textbf{Commands}}!\cmds{reg}|book{2}}{133}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{uname}|book{3}}{8}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{ps}|book{3}}{9}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{find}|book{3}}{12}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{bitsadmin}|book{3}}{26}
