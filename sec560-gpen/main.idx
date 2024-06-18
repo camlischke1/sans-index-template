@@ -263,6 +263,78 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@user account control|book{3}}{21-2}
 \indexentry{1@user account control!bypass|book{3}}{23}
 \indexentry{1@ingestors|book{3}}{30}
+\indexentry{1@registry keys|book{3}}{40}
+\indexentry{1@HKCU|book{3}}{40}
+\indexentry{1@cmd.exe autorun|book{3}}{40}
+\indexentry{1@startup folder|book{3}}{41}
+\indexentry{1@services|book{3}}{43}
+\indexentry{1@scheduled tasks|book{3}}{42}
+\indexentry{1@WMI!event subscription|book{3}}{44}
+\indexentry{1@persistence!HKCU|book{3}}{40}
+\indexentry{1@persistence!cmd.exe autorun|book{3}}{40}
+\indexentry{1@persistence!startup folder|book{3}}{41}
+\indexentry{1@persistence!scheduled task|book{3}}{42}
+\indexentry{1@persistence!services|book{3}}{43}
+\indexentry{1@persistence!WMI events|book{3}}{43}
+\indexentry{1@passwords!synced|book{3}}{49}
+\indexentry{1@passwords!dictionaries|book{3}}{50}
+\indexentry{1@passwords!mangling|book{3}}{51}
+\indexentry{1@mangling|book{3}}{51}
+\indexentry{1@passwords!cloud hardware|book{3}}{53}
+\indexentry{1@passwords!sniffing|book{3}}{54}
+\indexentry{1@passwords!keystroke|book{3}}{54}
+\indexentry{1@pass-the-hash|book{3}}{54}
+\indexentry{1@passwords!reporting|book{3}}{56}
+\indexentry{1@passwords!in windows|book{3}}{58-66}
+\indexentry{1@SAM database|book{3}}{58}
+\indexentry{1@hash!LANMAN|book{3}}{60}
+\indexentry{1@hash!NT|book{3}}{61}
+\indexentry{1@ntds.dit|book{3}}{59}
+\indexentry{1@passwords!salt|book{3}}{61}
+\indexentry{1@challenge-response!LANMAN|book{3}}{63}
+\indexentry{1@hash!LANMAN}{63}
+\indexentry{1@challenge-response!NTLMv1|book{3}}{63}
+\indexentry{1@NTLMv1|book{3}}{64}
+\indexentry{1@challenge-response!NTLMv2|book{3}}{65-6}
+\indexentry{1@NTLMv2|book{3}}{65-6}
+\indexentry{1@smart cards|book{3}}{67}
+\indexentry{1@passwords!in linux|book{3}}{58-66}
+\indexentry{1@crypt3|book{3}}{58-66}
+\indexentry{1@hash!MD5|book{3}}{69}
+\indexentry{1@hash!formats|book{3}}{68}
+\indexentry{1@hash!rounds|book{3}}{69}
+\indexentry{1@/etc/shadow|book{3}}{68}
+\indexentry{1@windows!passwords|book{3}}{58-66}
+\indexentry{1@windows!passwords}{72-7}
+\indexentry{1@VSS|book{3}}{74}
+\indexentry{1@Volume Shadow Copy Service|book{3}}{74}
+\indexentry{1@SAM database}{75}
+\indexentry{1@ntds.dit}{75}
+\indexentry{1@LSASS}{77}
+\indexentry{1@challenge-response!Kerberos|book{3}}{99}
+\indexentry{1@kerberos|book{3}}{99}
+\indexentry{1@SPNs|book{3}}{99}
+\indexentry{1@challenge-response!NTLMv2}{100-01}
+\indexentry{1@NTLMv2}{100}
+\indexentry{1@passwords!sniffing}{100-01}
+\indexentry{1@NBT-NS|book{3}}{106}
+\indexentry{1@LLMNR|book{3}}{106}
+\indexentry{1@mDNS|book{3}}{106}
+\indexentry{1@WPAD|book{3}}{108}
+\indexentry{1@web proxy auto discovery|book{3}}{108}
+\indexentry{1@WinInet InternetQueryOption|book{3}}{108}
+\indexentry{1@scf file|book{3}}{109}
+\indexentry{1@NTLMv2!attacks|book{3}}{110}
+\indexentry{1@smb relaying|book{3}}{111}
+\indexentry{1@NTLMv2!defense|book{3}}{113}
+\indexentry{1@smb signing|book{3}}{113}
+\indexentry{1@VLANs|book{3}}{113}
+
+
+
+
+
+
 
 
 
@@ -315,7 +387,7 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Sites}}!Cobalt Strike|book{2}}{39}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!Immunity CANVAS|book{2}}{39}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!Metasploit|book{2}}{42-60}
-\indexentry{20@{\Large\textbf{Tools/Sites}}!Metasploit!Meterpreter|book{2}}{53-60}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Meterpreter|book{2}}{53-60}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!Verizon DBIR|book{2}}{69}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!C2 Matrix|book{2}}{73}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!Sliver|book{2}}{76-83}
@@ -345,7 +417,26 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Sites}}!PowerUp|book{3}}{25}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!LOLBAS|book{3}}{26}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!BloodHound|book{3}}{30-5}
-
+\indexentry{20@{\Large\textbf{Tools/Sites}}!schtasksabuse|book{3}}{42}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!SkullSecurity Passwords|book{3}}{50}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!CeWL|book{3}}{51}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!NPK|book{3}}{53}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!secretsdump.py|book{3}}{59}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!L0phtCrack|book{3}}{59}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!JohnTheRipper!unshadow|book{3}}{71}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Meterpreter!hashdump|book{3}}{73}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Mimikatz|book{3}}{77}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!VSSOwn|book{3}}{74}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!NTDSUtil|book{3}}{76}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Meterpreter!load kiwi|book{3}}{77}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Meterpreter!creds_all|book{3}}{77}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!JohnTheRipper!potfile|book{3}}{83}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!JohnTheRipper|book{3}}{83-6}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Hashcat|book{3}}{89-94}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Pipal|book{3}}{95}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Pcredz|book{3}}{102-4}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Cain|book{3}}{102}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Responder|book{3}}{106-13}
 
 
 
@@ -378,3 +469,8 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{10@{\Large\textbf{Commands}}!\cmds{ps}|book{3}}{9}
 \indexentry{10@{\Large\textbf{Commands}}!\cmds{find}|book{3}}{12}
 \indexentry{10@{\Large\textbf{Commands}}!\cmds{bitsadmin}|book{3}}{26}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{schtasks}|book{3}}{42}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{uniq}|book{3}}{50}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{schtasks}|book{3}}{42}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{cscript}|book{3}}{74}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{ntdsutil.exe}|book{3}}{76}
