@@ -329,6 +329,54 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@NTLMv2!defense|book{3}}{113}
 \indexentry{1@smb signing|book{3}}{113}
 \indexentry{1@VLANs|book{3}}{113}
+\indexentry{1@proxies|book{3}}{113}
+\indexentry{1@port forwarding|book{4}}{5}
+\indexentry{1@pivoting!linux|book{4}}{6}
+\indexentry{1@pivoting!windows|book{4}}{9-28}
+\indexentry{1@ssh!key theft|book{4}}{6}
+\indexentry{1@credential reuse|book{4}}{6}
+\indexentry{1@WinRM|book{4}}{10-11}
+\indexentry{1@kerberos!ticket reuse|book{4}}{12}
+\indexentry{1@smb|book{4}}{13}
+\indexentry{1@services!controller|book{4}}{14}
+\indexentry{1@services!name|book{4}}{16}
+\indexentry{1@kerberos!impacket|book{4}}{33}
+\indexentry{1@impacket!kerberos|book{4}}{33}
+\indexentry{1@impacket!secretsdump|book{4}}{34}
+\indexentry{1@impacket!remote exec|book{4}}{35-7}
+\indexentry{1@impacket!syntax|book{4}}{35}
+\indexentry{1@SAM database|book{4}}{41}
+\indexentry{1@LSASS|book{4}}{41}
+\indexentry{1@pass-the-hash|book{4}}{41-9}
+\indexentry{1@windows!file/print sharing|book{4}}{42}
+\indexentry{1@file/print sharing|book{4}}{42}
+\indexentry{1@pass-the-hash!mitigations|book{4}}{44}
+\indexentry{1@security identifiers|book{4}}{44}
+\indexentry{1@UAC|book{4}}{44}
+\indexentry{1@credential guard|book{4}}{44}
+\indexentry{1@metasploit!psexec|book{4}}{46}
+\indexentry{1@password attacks|book{4}}{47}
+\indexentry{1@evasion|book{4}}{52-69}
+\indexentry{1@evasion!tactics|book{4}}{52-69}
+\indexentry{1@evasion!amsi|book{4}}{56-60}
+\indexentry{1@amsi|book{4}}{56-60}
+\indexentry{1@ScanContent|book{4}}{57}
+\indexentry{1@AmsiScanBuffer|book{4}}{57}
+\indexentry{1@amsi!bypasses|book{4}}{58-60}
+\indexentry{1@evasion!static analysis|book{4}}{61}
+\indexentry{1@NtProtectVirtualMemory|book{4}}{63}
+\indexentry{1@evasion!signature detection|book{4}}{64}
+\indexentry{1@evasion!windows defender|book{4}}{65}
+\indexentry{1@evasion!application control|book{4}}{72-80}
+\indexentry{1@application control|book{4}}{71}
+\indexentry{1@msbuild|book{4}}{74-80}
+\indexentry{1@pivoting!linux}{84-91}
+\indexentry{1@pivoting!ssh|book{4}}{87-8}
+\indexentry{1@ssh!port forwarding|book{4}}{87-8}
+\indexentry{1@reporting|book{4}}{94-119}
+\indexentry{1@reporting!format|book{4}}{96}
+
+
 
 
 
@@ -386,7 +434,7 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Sites}}!LinPEAS|book{2}}{39}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!Cobalt Strike|book{2}}{39}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!Immunity CANVAS|book{2}}{39}
-\indexentry{20@{\Large\textbf{Tools/Sites}}!Metasploit|book{2}}{42-60}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Metasploit}{42-60}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!Meterpreter|book{2}}{53-60}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!Verizon DBIR|book{2}}{69}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!C2 Matrix|book{2}}{73}
@@ -437,6 +485,27 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Sites}}!Pcredz|book{3}}{102-4}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!Cain|book{3}}{102}
 \indexentry{20@{\Large\textbf{Tools/Sites}}!Responder|book{3}}{106-13}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Netcat|book{4}}{5}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Iptables|book{4}}{5}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!nmap|book{4}}{10}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Rubeus|book{4}}{12}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!WMIC|book{4}}{16}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!PsExec|book{4}}{18-20}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Impacket|book{4}}{32-7}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!VSSAdmin|book{4}}{34}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Impacket!smbexec/wmiexec|book{4}}{37}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Metasploit!psexec|book{4}}{46}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!VeilEvasion|book{4}}{53}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!VirusTotal|book{4}}{54}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!PowerStripper|book{4}}{62}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!PowerSploit!Remove-Comment|book{4}}{62}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!SharpBlock|book{4}}{63}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!VirtualProtect|book{4}}{63}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!DefenderCheck|book{4}}{65}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!VeilEvasion}{69}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!MSBuild|book{4}}{72-9}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Metasploit!pivoting|book{4}}{84}
+\indexentry{20@{\Large\textbf{Tools/Sites}}!Meterpreter!pivoting|book{4}}{85-6}
 
 
 
@@ -474,3 +543,16 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{10@{\Large\textbf{Commands}}!\cmds{schtasks}|book{3}}{42}
 \indexentry{10@{\Large\textbf{Commands}}!\cmds{cscript}|book{3}}{74}
 \indexentry{10@{\Large\textbf{Commands}}!\cmds{ntdsutil.exe}|book{3}}{76}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{winrs}|book{4}}{10}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{Test-WSMan}|book{4}}{11}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{Get-Credential}|book{4}}{11}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{net.exe}|book{4}}{13}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{sc}|book{4}}{14}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{services.msc}|book{4}}{16}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{schtasks}|book{4}}{21}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{sc}}{23}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{wmic}|book{4}}{25-6}
+\indexentry{10@{\Large\textbf{Commands}}!\cmds{msbuild.exe}|book{4}}{72-9}
+
+
+
