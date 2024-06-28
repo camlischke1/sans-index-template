@@ -506,17 +506,6 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Commands}}!MSBuild|book{4}}{72-9}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!Metasploit!pivoting|book{4}}{84}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!Meterpreter!pivoting|book{4}}{85-6}
-
-
-
-
-
-
-
-\indexentry{19@\blankline|comment}{0}
-\comment{********************************************************************************************
-                                       COMMANDS SECTION
-*****************************************************************************************************}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{netstat} connections|book{1}}{53}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{lsof} connections|book{1}}{53}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{net.exe}|book{2}}{16}
