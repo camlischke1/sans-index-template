@@ -375,8 +375,127 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@ssh!port forwarding|book{4}}{87-8}
 \indexentry{1@reporting|book{4}}{94-119}
 \indexentry{1@reporting!format|book{4}}{96}
-
-
+\indexentry{1@kerberos!auth|book{5}}{6}
+\indexentry{1@kerberos!kdc|book{5}}{5-7}
+\indexentry{1@kerberos!ticket-granting ticket|book{5}}{10}
+\indexentry{1@kerberos!long-term keys|book{5}}{8}
+\indexentry{1@kerberos!asreq/asrep|book{5}}{8}
+\indexentry{1@kerberos!service ticket|book{5}}{11}
+\indexentry{1@kerberos!priv attribute cert|book{5}}{10}
+\indexentry{1@priv attribute cert|book{5}}{10}
+\indexentry{1@PAC|book{5}}{10}
+\indexentry{1@kerberos!tgsreq/tgsrep|book{5}}{11}
+\indexentry{1@kerberos!spn|book{5}}{12}
+\indexentry{1@SPN|book{5}}{12}
+\indexentry{1@kerberos!service ticket}{13-6}
+\indexentry{1@PAC}{13}
+\indexentry{1@SPN}{18}
+\indexentry{1@kerberos!spn}{18}
+\indexentry{1@kerberos!kerberoasting|book{5}}{11}
+\indexentry{1@kerberoasting|book{5}}{21}
+\indexentry{1@kerberoasting!etypes|book{5}}{22}
+\indexentry{1@etypes|book{5}}{22}
+\indexentry{1@rc4|book{5}}{22}
+\indexentry{1@aes|book{5}}{22}
+\indexentry{1@kerberoasting!service accounts|book{5}}{22}
+\indexentry{1@kerberoasting!computer accounts|book{5}}{22}
+\indexentry{1@kerberoasting!targets|book{5}}{22}
+\indexentry{1@kerberos!pass-the-ticket|book{5}}{27-8}
+\indexentry{1@kerberos!overpass-the-hash|book{5}}{29}
+\indexentry{1@domain!admin|book{5}}{30}
+\indexentry{1@rid 512|book{5}}{30}
+\indexentry{1@kerberos!krbtgt account|book{5}}{30}
+\indexentry{1@persistence!domain/AD|book{5}}{32}
+\indexentry{1@domain!ntds file|book{5}}{33}
+\indexentry{1@domain!persistence|book{5}}{32}
+\indexentry{1@ntds file|book{5}}{33}
+\indexentry{1@SYSTEM registry|book{5}}{33}
+\indexentry{1@backup servers|book{5}}{33}
+\indexentry{1@VSS|book{5}}{33}
+\indexentry{1@Volume Shadow Copy Service|book{5}}{33}
+\indexentry{1@install from media|book{5}}{34}
+\indexentry{1@domain!admin}{35}
+\indexentry{1@domain!skeleton key|book{5}}{36}
+\indexentry{1@skeleton key|book{5}}{36}
+\indexentry{1@domain!controllers plural|book{5}}{36}
+\indexentry{1@domain!replication|book{5}}{38}
+\indexentry{1@DCSync|book{5}}{38}
+\indexentry{1@DRSR|book{5}}{39}
+\indexentry{1@directory replication service remote|book{5}}{39}
+\indexentry{1@domain!DCSync|book{5}}{38}
+\indexentry{1@DCShadow|book{5}}{40}
+\indexentry{1@domain!DCShadow|book{5}}{40}
+\indexentry{1@ADCS|book{5}}{46}
+\indexentry{1@certificate!service|book{5}}{46}
+\indexentry{1@PKI|book{5}}{46}
+\indexentry{1@certificate!authority|book{5}}{46}
+\indexentry{1@certificate!signing request|book{5}}{46}
+\indexentry{1@certificate!template|book{5}}{50}
+\indexentry{1@extended key usage|book{5}}{48}
+\indexentry{1@certificate!authority!internal|book{5}}{49}
+\indexentry{1@rc4}{36}
+\indexentry{1@ESC!1|book{5}}{50-69}
+\indexentry{1@certificate!template!ESC1|book{5}}{50-70}
+\indexentry{1@certificate!template!access control|book{5}}{70}
+\indexentry{1@ACE|book{5}}{70}
+\indexentry{1@access control!entities|book{5}}{70}
+\indexentry{1@ESC!4|book{5}}{71-81}
+\indexentry{1@certificate!template!ESC4|book{5}}{71-81}
+\indexentry{1@ESC!8|book{5}}{82-3}
+\indexentry{1@certificate!template!ESC8|book{5}}{82-3}
+\indexentry{1@certificate!enrollment|book{5}}{82}
+\indexentry{1@ntlm!relay|book{5}}{82}
+\indexentry{1@silver ticket|book{5}}{89-90}
+\indexentry{1@kerberos!silver ticket|book{5}}{89}
+\indexentry{1@PAC}{88}
+\indexentry{1@kerberos!long-term keys}{88}
+\indexentry{1@kerberos!krbtgt account}{87-8}
+\indexentry{1@kerberos!golden ticket}{94-7}
+\indexentry{1@golden ticket|book{5}}{94-7}
+\indexentry{1@kerberos!krbtgt account}{94}
+\indexentry{1@kerberos!stateless|book{5}}{95}
+\indexentry{1@privesc!domain|book{5}}{101-4}
+\indexentry{1@domain!privesc|book{5}}{101-4}
+\indexentry{1@memory dumps|book{5}}{103}
+\indexentry{1@LSASS|book{5}}{103}
+\indexentry{1@process dumps|book{5}}{103}
+\indexentry{1@kerberos!asrep roast|book{5}}{104}
+\indexentry{1@asrep roast|book{5}}{104}
+\indexentry{1@OIDC|book{5}}{107}
+\indexentry{1@azure!AD|book{5}}{111}
+\indexentry{1@azure!management portals|book{5}}{108}
+\indexentry{1@azure!shell|book{5}}{108}
+\indexentry{1@cloud shell|book{5}}{108}
+\indexentry{1@azure!access control|book{5}}{109}
+\indexentry{1@azure!IAM|book{5}}{109}
+\indexentry{1@hybrid auth|book{5}}{111}
+\indexentry{1@azure!authentication|book{5}}{111-8}
+\indexentry{1@azure!scope|book{5}}{116}
+\indexentry{1@user principal name|book{5}}{114}
+\indexentry{1@UPN|book{5}}{114}
+\indexentry{1@JSON web token|book{5}}{115}
+\indexentry{1@JWT|book{5}}{115}
+\indexentry{1@microsoft!authentication|book{5}}{116}
+\indexentry{1@LDAP|book{5}}{116}
+\indexentry{1@azure!access control}{116}
+\indexentry{1@microsoft!ADDS|book{5}}{117}
+\indexentry{1@ADDS|book{5}}{117}
+\indexentry{1@X509|book{5}}{117}
+\indexentry{1@azure!AD}{117}
+\indexentry{1@azure!federation|book{5}}{118}
+\indexentry{1@azure!synchronization|book{5}}{118}
+\indexentry{1@password hash synchronization|book{5}}{118}
+\indexentry{1@pass-through auth|book{5}}{118}
+\indexentry{1@source anchor|book{5}}{118}
+\indexentry{1@azure!recon|book{5}}{120-29}
+\indexentry{1@azure!external recon|book{5}}{121}
+\indexentry{1@azure!user enumeration|book{5}}{122-27}
+\indexentry{1@azure!request throttle|book{5}}{125}
+\indexentry{1@GetCredentialType|book{5}}{123-5}
+\indexentry{1@OAuthToken|book{5}}{126-7}
+\indexentry{1@azure!legacy protocols|book{5}}{128}
+\indexentry{1@legacy authen|book{5}}{128}
+\indexentry{1@azure!password attacks|book{5}}{131-40}
 
 
 
@@ -542,6 +661,33 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{sc}}{23}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{wmic}|book{4}}{25-6}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{msbuild.exe}|book{4}}{72-9}
-
+\indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{setspn.exe}|book{5}}{12}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{setspn.exe}}{19}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!GetUserSPN|book{5}}{20}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Invoke-Kerberoast|book{5}}{20}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Hashcat|book{5}}{22}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Rubeus|book{5}}{27}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Mimikatz|book{5}}{27-8}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!secretsdump.py|book{5}}{33}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{ntdsutil.exe}|book{5}}{34}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Mimikatz!skeleton key|book{5}}{37}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Mimikatz!DCSync|book{5}}{39}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Mimikatz!DCShadow|book{5}}{41}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Certify!ESC1|book{5}}{57-61}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Rubeus!ESC1|book{5}}{62-4}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Certipy!ESC1|book{5}}{65-9}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Certify!ESC4|book{5}}{73-4}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Certipy!ESC4|book{5}}{75-81}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!ntlmrelayx.py|book{5}}{83}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!ADCSPwn|book{5}}{83}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Impacket!silver ticket|book{5}}{89-90}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Impacket!golden ticket|book{5}}{97}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Mimikatz!golden ticket|book{5}}{97}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!PowerView!domain privesc|book{5}}{101-2}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!PowerSploit!Out-MiniDump|book{5}}{103}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!AAD-Internals|book{5}}{120-1}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!MailSniper|book{5}}{128}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Ews-Crack|book{5}}{128}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Metasploit!owa_login|book{5}}{128}
 
 
