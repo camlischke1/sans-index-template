@@ -496,8 +496,85 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@azure!legacy protocols|book{5}}{128}
 \indexentry{1@legacy authen|book{5}}{128}
 \indexentry{1@azure!password attacks|book{5}}{131-40}
-
-
+\indexentry{1@OAuth Token|book{5}}{131}
+\indexentry{1@azure!smart lockout|book{5}}{136}
+\indexentry{1@azure!OAuth Token|book{5}}{131}
+\indexentry{1@execution plan|book{5}}{134}
+\indexentry{1@AADSTS-50053|book{5}}{136}
+\indexentry{1@IdsLocked|book{5}}{136}
+\indexentry{1@ADFS Extranet Lockout|book{5}}{137}
+\indexentry{1@Extranet Lockout|book{5}}{137}
+\indexentry{1@azure!lockout bypass|book{5}}{138-40}
+\indexentry{1@load balancing|book{5}}{138}
+\indexentry{1@AWS!api gateway|book{5}}{138}
+\indexentry{1@proxies!ssh|book{5}}{139}
+\indexentry{1@proxies!http|book{5}}{140}
+\indexentry{1@OpenID!Connect|book{5}}{144}
+\indexentry{1@Oauth2!flow types|book{5}}{155}
+\indexentry{1@Oauth2!code flow|book{5}}{144-54}
+\indexentry{1@first-class citizen|book{5}}{144}
+\indexentry{1@authentication!MFA|book{5}}{144}
+\indexentry{1@authentication!FIDO2|book{5}}{144}
+\indexentry{1@authentication!LDAPS|book{5}}{144}
+\indexentry{1@authentication!central|book{5}}{144}
+\indexentry{1@central auth server|book{5}}{144}
+\indexentry{1@MSOL|book{5}}{146}
+\indexentry{1@login.microsoftonline|book{5}}{146}
+\indexentry{1@conditional access policies|book{5}}{147}
+\indexentry{1@access control!conditional|book{5}}{147}
+\indexentry{1@Oauth2!access token|book{5}}{149}
+\indexentry{1@OpenID!access token|book{5}}{149}
+\indexentry{1@Oauth2!JWT|book{5}}{149}
+\indexentry{1@OpenID!JWT|book{5}}{149}
+\indexentry{1@Oauth2!claims|book{5}}{150}
+\indexentry{1@OpenID!claims|book{5}}{150}
+\indexentry{1@Oauth2!access token}{152}
+\indexentry{1@OpenID!access token}{152}
+\indexentry{1@Oauth2!refresh token|book{5}}{152-4}
+\indexentry{1@OpenID!refresh token|book{5}}{152-4}
+\indexentry{1@primary refresh token|book{5}}{152-4}
+\indexentry{1@grant|book{5}}{155}
+\indexentry{1@PKCE|book{5}}{155}
+\indexentry{1@proof key code exchange|book{5}}{155}
+\indexentry{1@terraform automation|book{5}}{155}
+\indexentry{1@grant|book{5}}{155}
+\indexentry{1@azure!infrastructure|book{5}}{157-9}
+\indexentry{1@azure!compute|book{5}}{157}
+\indexentry{1@azure!blobs|book{5}}{157}
+\indexentry{1@azure!devops|book{5}}{157}
+\indexentry{1@azure!backup|book{5}}{157}
+\indexentry{1@azure!api manage|book{5}}{157}
+\indexentry{1@azure!groups!management|book{5}}{158}
+\indexentry{1@azure!groups!resource|book{5}}{158}
+\indexentry{1@azure!plane!control|book{5}}{159}
+\indexentry{1@azure!plane!data|book{5}}{159}
+\indexentry{1@azure!auth library|book{5}}{162}
+\indexentry{1@MSAL|book{5}}{162}
+\indexentry{1@phishing!device code flow|book{5}}{162}
+\indexentry{1@azure!automation|book{5}}{163}
+\indexentry{1@azure!extensions|book{5}}{163}
+\indexentry{1@SCCM|book{5}}{163}
+\indexentry{1@azure!perms|book{5}}{166-72}
+\indexentry{1@azure!global admin|book{5}}{166}
+\indexentry{1@azure!user access admin|book{5}}{166}
+\indexentry{1@user access admin|book{5}}{166}
+\indexentry{1@global admin|book{5}}{166}
+\indexentry{1@OpenID!Connect}{166}
+\indexentry{1@azure!roles|book{5}}{167}
+\indexentry{1@azure!perms!owner|book{5}}{167}
+\indexentry{1@azure!perms!contributor|book{5}}{167}
+\indexentry{1@azure!perms!reader|book{5}}{167}
+\indexentry{1@azure!perms!IAM document|book{5}}{168}
+\indexentry{1@azure!perms!inheritance|book{5}}{169}
+\indexentry{1@inheritance|book{5}}{169}
+\indexentry{1@instance metadata service|book{5}}{170}
+\indexentry{1@imds|book{5}}{170}
+\indexentry{1@identity token|book{5}}{171}
+\indexentry{1@azure!identity token|book{5}}{171}
+\indexentry{1@azure!identities|book{5}}{171}
+\indexentry{1@managed identity!user assigned|book{5}}{171}
+\indexentry{1@managed identity!system assigned|book{5}}{171}
+\indexentry{1@tunnels|book{5}}{176}
 
 
 
@@ -689,5 +766,16 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Commands}}!MailSniper|book{5}}{128}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!Ews-Crack|book{5}}{128}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!Metasploit!owa_login|book{5}}{128}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!MSOLSpray|book{5}}{131}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!TrevorSpray|book{5}}{132}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!TrevorSpray!load balance}{139}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Spray365|book{5}}{132}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Spray365!load balance}{140}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Burp!IP Rotate|book{5}}{140}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!AWS API Gateway|book{5}}{138-40}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!jwt.ms|book{5}}{138-40}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Azure CLI|book{5}}{162-4}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Azure CLI!Run-Command|book{5}}{164}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!ngrok|book{5}}{175-8}
 
 
