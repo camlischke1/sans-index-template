@@ -50,14 +50,39 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@impersonation!user-agent|book{1}}{63}
 \indexentry{1@impersonation!operating system|book{1}}{65-8}
 \indexentry{1@impersonation!browser|book{1}}{68-9}
-
-
-
-
-
-
-
-
+\indexentry{1@802.1!supplicant|book{1}}{71}
+\indexentry{1@port access entity|book{1}}{71}
+\indexentry{1@pae|book{1}}{71}
+\indexentry{1@RADIUS|book{1}}{71}
+\indexentry{1@EAP!MD5|book{1}}{71}
+\indexentry{1@EAP!TLS|book{1}}{71}
+\indexentry{1@EAP!wired shadow attack|book{1}}{74}
+\indexentry{1@stateless|book{1}}{74}
+\indexentry{1@wired shadow attack|book{1}}{74}
+\indexentry{1@impersonation!MAC}{74}
+\indexentry{1@supplicant|book{1}}{71}
+\indexentry{1@802.1!shadow|book{1}}{75}
+\indexentry{1@VLAN!hopping|book{1}}{85}
+\indexentry{1@VLAN!trunking|book{1}}{78}
+\indexentry{1@dynamic trunking protocol|book{1}}{78}
+\indexentry{1@802.1!Q/ISL|book{1}}{78}
+\indexentry{1@port!access|book{1}}{78}
+\indexentry{1@port!trunk|book{1}}{78}
+\indexentry{1@inter-switch!LAN|book{1}}{78}
+\indexentry{1@DTP|book{1}}{78}
+\indexentry{1@DTP!VLAN hopping attack|book{1}}{79-86}
+\indexentry{1@cisco!port status codes|book{1}}{79}
+\indexentry{1@cisco!dtp|book{1}}{78}
+\indexentry{1@juniper!lldep-med|book{1}}{78}
+\indexentry{1@VLAN!voice hopping|book{1}}{85}
+\indexentry{1@cisco!discovery protocol|book{1}}{88}
+\indexentry{1@arp spoofing|book{1}}{95}
+\indexentry{1@filter!manipulation|book{1}}{105}
+\indexentry{1@filter!ettercap|book{1}}{105}
+\indexentry{1@browser!caching|book{1}}{105}
+\indexentry{1@smb!capture|book{1}}{106}
+\indexentry{1@smb!relay|book{1}}{107}
+\indexentry{1@smb!signing|book{1}}{107}
 
 
 
@@ -77,7 +102,6 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Commands}}!Shelter|book{1}}{27}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{Invoke-Obfuscation}|book{1}}{30}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{Invoke-AMSIBypass}|book{1}}{30}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{Invoke-AMSIBypass}|book{1}}{30}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!chimera}|book{1}{30}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!amsi.fail}|book{1}{31}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!PacketFence}|book{1}{53}
@@ -88,8 +112,21 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Commands}}!User Agent Switcher}|book{1}{63}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!scapy}|book{1}{67}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{iptables}|book{1}}{66}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!panopticlick}|book{1}{67}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!fingerbank}|book{1}{67}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!panopticlick}|book{1}{68}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!fingerbank}|book{1}{68}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!eapmd5fuzzies}|book{1}{73}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Sulley}|book{1}{73}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!pwn plug}|book{1}{75}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!pwnie express}|book{1}{75}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!yersinia}|book{1}{80-3}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{vconfig}|book{1}}{84}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{modprobe}|book{1}}{84}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!voiphopper}|book{1}{90}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{arp}|book{1}}{97}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!ettercap}|book{1}{98}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!ettercap!filters}|book{1}{102}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!metasploit!smb capture}|book{1}{106}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Responder}|book{1}{107}
 
 
 
