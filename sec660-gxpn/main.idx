@@ -23,7 +23,7 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
     - ... = sorting key
     - \blankline is defined in the .tex file and fills the line with space
     - \rank is defined in the .tex file and uses a the forloop package to repeat x times \star
-    - comment style (behind "|") will act as a \comment command, commenting the page number "{0}"
+    - \comment style (behind "|") will act as a \comment command, commenting the page number "{0}"
 
 
     % TeX build command on Windows:
@@ -83,6 +83,32 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@smb!capture|book{1}}{106}
 \indexentry{1@smb!relay|book{1}}{107}
 \indexentry{1@smb!signing|book{1}}{107}
+\indexentry{1@sslstrip|book{1}}{113}
+\indexentry{1@hot standby router protocol|book{1}}{124}
+\indexentry{1@hsrp|book{1}}{124}
+\indexentry{1@multicast|book{1}}{124}
+\indexentry{1@virtual router redundancy protocol|book{1}}{128}
+\indexentry{1@vrrp|book{1}}{128}
+\indexentry{1@routing traffic|book{1}}{131}
+\indexentry{1@open shortest path first protocol|book{1}}{132}
+\indexentry{1@link-state advertisements|book{1}}{132}
+\indexentry{1@ospf|book{1}}{132}
+\indexentry{1@lsa|book{1}}{132}
+\indexentry{1@ospf!enumeration|book{1}}{134}
+\indexentry{1@designated router|book{1}}{134}
+\indexentry{1@ospf!state tree|book{1}}{134}
+\indexentry{1@ospf!dictionary attack|book{1}}{136}
+\indexentry{1@bgp|book{1}}{137}
+\indexentry{1@border gateway protocol|book{1}}{137}
+\indexentry{1@virtual routers|book{1}}{138}
+\indexentry{1@IPv6|book{1}}{142-158}
+\indexentry{1@IPv6!unicast|book{1}}{144}
+\indexentry{1@IPv6!anycast|book{1}}{144}
+\indexentry{1@IPv6!multicast|book{1}}{144}
+\indexentry{1@IPv6!prefixes|book{1}}{144}
+\indexentry{1@IPv6!enumeration|book{1}}{149}
+\indexentry{1@IPv6!neighbor discovery|book{1}}{151}
+\indexentry{1@neighbor discovery|book{1}}{151}
 
 
 
@@ -102,31 +128,46 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Commands}}!Shelter|book{1}}{27}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{Invoke-Obfuscation}|book{1}}{30}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{Invoke-AMSIBypass}|book{1}}{30}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!chimera}|book{1}{30}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!amsi.fail}|book{1}{31}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!PacketFence}|book{1}{53}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!Cain}|book{1}{55}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!macshift}|book{1}{58}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!cpscam}|book{1}{60}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!OSfuscate}|book{1}{65}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!User Agent Switcher}|book{1}{63}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!scapy}|book{1}{67}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!chimera|book{1}}{30}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!amsi.fail|book{1}}{31}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!PacketFence|book{1}}{53}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Cain|book{1}}{55}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!macshift|book{1}}{58}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!cpscam|book{1}}{60}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!OSfuscate|book{1}}{65}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!User Agent Switcher|book{1}}{63}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!scapy|book{1}}{67}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{iptables}|book{1}}{66}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!panopticlick}|book{1}{68}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!fingerbank}|book{1}{68}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!eapmd5fuzzies}|book{1}{73}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!Sulley}|book{1}{73}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!pwn plug}|book{1}{75}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!pwnie express}|book{1}{75}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!yersinia}|book{1}{80-3}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!panopticlick|book{1}}{68}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!fingerbank|book{1}}{68}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!eapmd5fuzzies|book{1}}{73}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Sulley|book{1}}{73}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!pwn plug|book{1}}{75}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!pwnie express|book{1}}{75}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!yersinia|book{1}}{80-3}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{vconfig}|book{1}}{84}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{modprobe}|book{1}}{84}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!voiphopper}|book{1}{90}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!voiphopper|book{1}}{90}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{arp}|book{1}}{97}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!ettercap}|book{1}{98}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!ettercap!filters}|book{1}{102}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!metasploit!smb capture}|book{1}{106}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!Responder}|book{1}{107}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!ettercap|book{1}}{98}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!ettercap!filters|book{1}}{102}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!metasploit!smb capture|book{1}}{106}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Responder|book{1}}{107}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Bettercap|book{1}}{111}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Bettercap!caplets|book{1}}{112}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Bettercap!autopwn|book{1}}{115}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!mitmproxy|book{1}}{117}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!arpspoof|book{1}}{117}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!mitmdump|book{1}}{117}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{http\_hijack.py}|book{1}}{119}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!mitmproxy}{120}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!yersinia}{127}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Loki|book{1}}{129}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Loki}{135}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!detect-new-ip6|book{1}}{149}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{ping6}|book{1}}{149}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!nmap|book{1}}{150}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!parasite6|book{1}}{152}
 
 
 

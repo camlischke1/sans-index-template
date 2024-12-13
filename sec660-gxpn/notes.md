@@ -76,7 +76,50 @@
         4. start Responder for an SMB sniffer/relay
         5. when the user requests a page with your smb server IP address, the user will have to send NTLM hashes to your server
         6. crack the hashes!
-    
+    - Other tools
+        - Bettercap provides extensibility and Autopwn 
+        - mitmproxy
+        - sslstrip
+- Routing Attacks
+    - Hot-Standby Router Protocol (HSRP)
+        - multiple routers with same IP address, if primary fails then secondary router takes over
+            - secondary device fails to see a preconfigured number of hello messages from primary, it believes primary has failed
+            - ALL devices on network see the HSRP traffic due to using multicast address 224.0.0.2
+        - ATTACK using Yersinia
+            - if attacker finds HSRP authentication string, attacker can impersonate HSRP router
+                1. Attacker sends HSRP hello messages with higher priority than primary router
+                2. attacker changes MAC address to 00:00:0c:07:ac:\<HSRP group address\>
+                3. attacker changes IP address to match other routers (default gateway)
+                4. can set up MitM attack
+                5. must continue to send HSRP hello messages to maintain primary status
+    - Virtual Router Redundancy Protocol (VRRP)
+        - essentially the same as HSRP except:
+            - MAC address to 00:00:5e:00:01:\<VRRP group address\>
+            - uses multicast address to send hello packets 224.0.0.18
+            - no authentication or integrity checks
+        - Loki tool 
+    - if attacker ever sees routing protocol traffic (OSPF, RIP, EIGRP) there is exploitation opportunity
+        - routing traffic should be limited to router interfaces, not end-user clients
+    - OSPF (Open Shortest Path First)
+        - essentially how a router stays aware of network topology and other routers within the LAN
+            - routers send OSPF traffic and Link State Advertisements (LSAs) to neighbor devices
+        - uses multicast group 224.0.0.5
+        - Enumeration Attack Against OSPF
+            - attacker must participate as an OSPF neighbor to receive LSAs that reveal network topology
+                1. requires responding to MD5 challenge/response authentication if configured to use authentication
+                2. after joinging OSPF routing neighborship, attacker steps through state tree with peer router
+        - MD5 Dictionary Attack
+            - if OSPF is configured to use authentication, we can capture hello messages and crack the shared secret
+    - Summary
+        - routing protocol traffic is assumed to be isolated but can sometimes be seen from LAN
+        - authentication tends to be weak
+        - attacker objective: manipulate protocol to become primary router, intercept, and redirect traffic
+- IPv6 Attacks
+    - Neighbor Discovery/Impersonation Attacks
+        - ARP is replaced by Neighbor Discovery (ND) in IPv6
+            - ICMPv6 Neighbor Solicitation request replied with a Neighbor Advertisement
+        - Essentially the same as ARP spoofing but with Neighbor Advertisement replies and ICMPv6 Override flag
+        - use parasite6 tool
 
 
 
