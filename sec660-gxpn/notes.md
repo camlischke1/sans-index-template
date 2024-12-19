@@ -115,11 +115,52 @@
         - authentication tends to be weak
         - attacker objective: manipulate protocol to become primary router, intercept, and redirect traffic
 - IPv6 Attacks
-    - Neighbor Discovery/Impersonation Attacks
+    - use IPv6 to get around IPv4 filters/blacklists!
+        1. Identify active ipv6 nodes
+        2. scan and identify services
+            - which ports and services are blocked for my ipv4 address?
+            - can I bypass these blocks by using my ipv6 address or manipulate it in such a way that allows access via ipv6?
+    - (Local) Neighbor Discovery/Impersonation Attacks
         - ARP is replaced by Neighbor Discovery (ND) in IPv6
             - ICMPv6 Neighbor Solicitation request replied with a Neighbor Advertisement
         - Essentially the same as ARP spoofing but with Neighbor Advertisement replies and ICMPv6 Override flag
         - use parasite6 tool
+    - (Local) Router Solicitation MitM attacks
+        - responding to router solicitation messages
+            - nodes regularly ask for router solicitation messages (RS) at the anycast address (directed to all routers)
+                - sent at FF02::2 anycast address
+            - routers send multicast messages router advertisement (RA) responses to all nodes 
+                - sent at FF02::1 address multicast
+        - Attacker inserts RA messages that specify himself as the priority router
+            - nodes send all ipv6 traffic to external networks through attacker router
+    - remote attacks require direct access to ipv6 network through ISP or ipv4-to-ipv6 tunneled connection
+    - Remote IPv6 Node Discovery
+        - no opportunity for multicast node discovery, must rely on other techniques
+            - DNS, 
+            - error messages, 
+            - HTTP/JS content
+    - Goals/Objectives
+        - become the gateway (mitm)
+        - avoid duplicate address detection
+        - use router announcement to your advantage
+        - override flag helps override current settings
+    - Potential attack technique
+        1. find filtered service with an ipv4 blacklist
+        2. test if the same machine has an ipv6 interface that is not filtered
+        3. identify vulnerable IPv4 machine
+        4. find MAC address
+        5. match MAC address with IPv6 address
+        6. exploit vulnerable service from ipv6
+- Attacking Encrypted Traffic 
+    - `sslstrip` useful for when attacker is MitM already
+        - only exploits when browsers go to http site and then redirected to connect to https
+    - mitigated by HTTP Strict Transport Security (HSTS) feature which disallows clients to visit unless HTTPS
+        - HSTS bypasses
+            - time -- spoofing NTP to make browser think the HSTS header is expired
+            - hostname -- make the victim browse to a different site and then Mitm it to be the site you want
+                - ie wwww.facebook does not have HSTS header set yet because it has not been visited yet
+                - user clicks malformed link, goes to wwww.facebook, attacker mitm changes it to www.facebook and reads traffic
+
 
 
 

@@ -109,7 +109,14 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@IPv6!enumeration|book{1}}{149}
 \indexentry{1@IPv6!neighbor discovery|book{1}}{151}
 \indexentry{1@neighbor discovery|book{1}}{151}
-
+\indexentry{1@IPv6!router solicitation|book{1}}{153}
+\indexentry{1@IPv6!router advertisement|book{1}}{153}
+\indexentry{1@IPv6!remote discovery|book{1}}{156}
+\indexentry{1@IPv6|lab{1}}{60}
+\indexentry{1@http!redirection|book{1}}{163}
+\indexentry{1@http!strict transport security|book{1}}{167}
+\indexentry{1@http!tampering|lab{1}}{69}
+\indexentry{1@ospf!route injection|lab{1}}{83}
 
 
 
@@ -168,6 +175,18 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{ping6}|book{1}}{149}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!nmap|book{1}}{150}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!parasite6|book{1}}{152}
-
+\indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{sysctl}|book{1}}{152}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{sysctl}}{154}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!fake\_router6|book{1}}{154}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Teredo|book{1}}{155}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!miredo|book{1}}{155}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!sixxs|book{1}}{155}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!hurricane electric|book{1}}{155}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!chiron|book{1}}{155}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!socat|book{1}}{157}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!sslstrip|book{1}}{163-6}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Bettercap!sslstrip|book{1}}{168}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!mitmproxy}{171}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!evilginx|book{1}}{177}
 
 
