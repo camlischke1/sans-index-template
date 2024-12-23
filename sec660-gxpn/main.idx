@@ -117,6 +117,17 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@http!strict transport security|book{1}}{167}
 \indexentry{1@http!tampering|lab{1}}{69}
 \indexentry{1@ospf!route injection|lab{1}}{83}
+\indexentry{1@ciphers!stream|book{2}}{9}
+\indexentry{1@ciphers!block|book{2}}{12}
+\indexentry{1@bit flipping|book{2}}{31}
+\indexentry{1@bit flipping|lab{1}}{31}
+\indexentry{1@oracle padding|book{2}}{35}
+\indexentry{1@padding|book{2}}{35}
+\indexentry{1@PKCS|book{2}}{36}
+\indexentry{1@ciphers!stream!IV reuse|book{2}}{48}
+\indexentry{1@IV collision|book{2}}{48}
+\indexentry{1@pairwise|book{2}}{53}
+\indexentry{1@hash extension|book{2}}{55}
 
 
 
@@ -188,5 +199,12 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Commands}}!Bettercap!sslstrip|book{1}}{168}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!mitmproxy}{171}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!evilginx|book{1}}{177}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!ImageMagick|book{2}}{16}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!pcaphistogram|book{2}}{24}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!tcpick|book{2}}{27}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!ent|book{2}}{27}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!scapy|book{2}}{29}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!POODLE|book{2}}{43}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!KRACK|book{2}}{53}
 
 
