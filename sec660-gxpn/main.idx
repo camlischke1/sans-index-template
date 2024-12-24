@@ -127,7 +127,22 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@ciphers!stream!IV reuse|book{2}}{48}
 \indexentry{1@IV collision|book{2}}{48}
 \indexentry{1@pairwise|book{2}}{53}
-\indexentry{1@hash extension|book{2}}{55}
+\indexentry{1@hash!extension|book{2}}{55}
+\indexentry{1@krack attack|book{2}}{53}
+\indexentry{1@wpa2|book{2}}{53}
+\indexentry{1@hash!padding algorithms|book{2}}{56}
+\indexentry{1@group policy objects|book{2}}{66}
+\indexentry{1@GPOs|book{2}}{66}
+\indexentry{1@software restriction policies|book{2}}{66}
+\indexentry{1@windows!defender application control|book{2}}{67}
+\indexentry{1@wdac|book{2}}{67}
+\indexentry{1@virtualization|book{2}}{69}
+\indexentry{1@kiosk mode|book{2}}{70}
+\indexentry{1@kiosk mode|lab{1}}{130}
+\indexentry{1@powershell!command order|book{2}}{84}
+\indexentry{1@powershell!command precedence|book{2}}{84}
+\indexentry{1@powershell!autoruns|book{2}}{86}
+\indexentry{1@powershell!persistent modules|book{2}}{86}
 
 
 
@@ -206,5 +221,14 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Commands}}!scapy|book{2}}{29}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!POODLE|book{2}}{43}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!KRACK|book{2}}{53}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!hash_extender|book{2}}{58}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!PSAttack|book{2}}{72}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!UnmanagedPowershell|book{2}}{72}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!NotPowershell|book{2}}{72}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{debug.exe}|book{2}}{73}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{certutil.exe}|book{2}}{73}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!msfvenom|book{2}}{74}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!unicorn|book{2}}{74}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!PDFSharp|book{2}}{81}
 
 

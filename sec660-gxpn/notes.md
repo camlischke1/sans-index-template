@@ -160,8 +160,42 @@
             - hostname -- make the victim browse to a different site and then Mitm it to be the site you want
                 - ie wwww.facebook does not have HSTS header set yet because it has not been visited yet
                 - user clicks malformed link, goes to wwww.facebook, attacker mitm changes it to www.facebook and reads traffic
+    - KRACK Attack  
+        - WPA2 uses an incrementing IV to encrypt traffic
+        - before the IV space runs out, the client must reauthenticate and a new IV and secret key is given, which is then re-incremented
+            - an attacker can replay the handshake with the same secret key, and then the IVs are reused for the subsequent packets
+            - reused IVs with reused secret keys allow attacker to decrypt the traffic
 
-
+# Advanced Post-exploitation
+## 1) Bypassing Windows Restrictions
+- Types of restictions
+    - Group Policy Objects and Software Restriction Policies
+        - Unrestricted -- software access rights are determined by user access
+        - Disallowed -- software does not run regardless of user access rights
+    - Windows Defender Application Control (WDAC)
+        - basic allow/deny rule defined on certificate, hash, zone, or path of the executable
+    - virtualized applications
+    - Third party restrictions
+        - replace the windows shell explorer by pointing HKLM/HKCU registry key to a different executable
+- Bypassing restricted desktops
+    - command shell for execution and output via cmd or Powershell or even third-party alternatives/built-in DLLs
+    - notepad to write ascii to file system
+    - explorer gui to grab files from internet/smb share
+    - notepad/paint/browser/media player to browse file system
+    - Certutil
+        1. base64-encode the binary file in a certificate format 
+        2. download the fake certificate file via notepad
+        2. certutil to write the certificate to a binary executable on disk
+    - restrictions are usually placed on EXE, but try scripts/DLLs/macros too
+- Living off the Land
+    - Rundll32.exe, cscript
+    - Screensavers are special types of portable executables
+        - good way for persistence and backdoors, replace the screensaver with a command shell or msfvenom payload
+    - Powershell
+        - has a .bashrc-like feature where profiles are run every single time Powershell starts. we can inject here. 
+        - persistent modules are loaded if included in the PSModulePath variable. we can inject here
+        
+        
 
 
 
