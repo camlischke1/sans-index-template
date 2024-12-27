@@ -142,7 +142,17 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@powershell!command order|book{2}}{84}
 \indexentry{1@powershell!command precedence|book{2}}{84}
 \indexentry{1@powershell!autoruns|book{2}}{86}
-\indexentry{1@powershell!persistent modules|book{2}}{86}
+\indexentry{1@powershell!persistent modules|book{2}}{87}
+\indexentry{1@exploit suggesters|book{2}}{90}
+\indexentry{1@client-side exploit|lab{1}}{150}
+\indexentry{1@client-side exploit|book{2}}{90-100}
+\indexentry{1@tracing!linux|book{2}}{102}
+\indexentry{1@tracing!windows|book{2}}{103-5}
+\indexentry{1@library loading|book{2}}{107-13}
+\indexentry{1@dll hijacking|book{2}}{111}
+\indexentry{1@windows!defenses|book{2}}{126}
+\indexentry{1@windows!AMSI|book{2}}{126}
+\indexentry{1@windows!EMET|book{2}}{126}
 
 
 
@@ -221,7 +231,7 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Commands}}!scapy|book{2}}{29}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!POODLE|book{2}}{43}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!KRACK|book{2}}{53}
-\indexentry{20@{\Large\textbf{Tools/Commands}}!hash_extender|book{2}}{58}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!hash\_extender|book{2}}{58}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!PSAttack|book{2}}{72}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!UnmanagedPowershell|book{2}}{72}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!NotPowershell|book{2}}{72}
@@ -230,5 +240,22 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Commands}}!msfvenom|book{2}}{74}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!unicorn|book{2}}{74}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!PDFSharp|book{2}}{81}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Empire|book{2}}{88}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Sherlock|book{2}}{90}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Watson|book{2}}{90}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Seatbelt.exe|lab{1}}{150}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Mimikittenz|lab{1}}{158}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Winpeas|lab{1}}{163}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Empire|lab{1}}{171}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Event Tracing For Windows|book{2}}{103}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!ProcessMonitor|book{2}}{103}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Dr. Memory|book{2}}{105}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{ltrace}|book{2}}{102}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{drltrace}|book{2}}{105}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!APIMonitor|book{2}}{104}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!DLHell|book{2}}{112}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!HookDump|book{2}}{113}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Firewalker|book{2}}{113}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!SharpHook|book{2}}{114}
 
 

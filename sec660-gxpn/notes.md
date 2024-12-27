@@ -187,14 +187,30 @@
         2. download the fake certificate file via notepad
         2. certutil to write the certificate to a binary executable on disk
     - restrictions are usually placed on EXE, but try scripts/DLLs/macros too
-- Living off the Land
+## 2) Obfuscation/Bypasses
+-Living off the Land
     - Rundll32.exe, cscript
     - Screensavers are special types of portable executables
         - good way for persistence and backdoors, replace the screensaver with a command shell or msfvenom payload
     - Powershell
         - has a .bashrc-like feature where profiles are run every single time Powershell starts. we can inject here. 
         - persistent modules are loaded if included in the PSModulePath variable. we can inject here
-        
+    - Exploiting pre-installed applications 
+        - Adobe and other PDF readers can run javascript
+        - browsers as PDF-viewers do not run JavaScript inside the pdf file
+- Library Loading
+    - use tracing techniques to understand the vulnerable executable
+    - dynamic libraries (.so and .dll) are loaded at runtime based on some pre-defined sequence. inject here.
+    - Linux 
+        - LD_PRELOAD, LD_LIBRARY_PATH, LD_AUDIT environment vars
+        - RPATH and RUNPATH defined in the ELF binary overwrite these environment variables
+    - Windows   
+        - PE executables use a statically-defined import table (likely with relative paths)
+        - DLL hijacking
+    - Metasploit/msfvenom can be used to make malicious libraries
+- EDR bypasses  
+    - Windows will allow any other EDR product to disable the Defender features
+        - make own (purposefully) horrible EDR and install it to essentially disable Windows Defender
         
 
 
