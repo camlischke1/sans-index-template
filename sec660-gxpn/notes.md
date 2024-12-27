@@ -210,8 +210,7 @@
     - Metasploit/msfvenom can be used to make malicious libraries
 - EDR bypasses  
     - Windows will allow any other EDR product to disable the Defender features
-        - make own (purposefully) horrible EDR and install it to essentially disable Windows Defender
-        
+        - make own (purposefully) horrible EDR and install it to essentially disable Windows Defender    
 
 
 

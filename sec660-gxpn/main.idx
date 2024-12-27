@@ -153,6 +153,20 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@windows!defenses|book{2}}{126}
 \indexentry{1@windows!AMSI|book{2}}{126}
 \indexentry{1@windows!EMET|book{2}}{126}
+\indexentry{1@risk analysis|book{3}}{51}
+\indexentry{1@fuzzing|book{3}}{93}
+\indexentry{1@fuzzing!instrumented|book{3}}{97}
+\indexentry{1@fuzzing!intelligent mutation|book{3}}{98}
+\indexentry{1@fuzzing!grammar|book{3}}{125}
+\indexentry{1@fuzzing!Sulley!grammar|book{3}}{125}
+\indexentry{1@fuzzing!Sulley!agents|book{3}}{136}
+\indexentry{1@fuzzing!Sulley!analysis|book{3}}{142}
+\indexentry{1@fuzzing!block coverage|book{3}}{153}
+\indexentry{1@basic blocks|book{3}}{153}
+\indexentry{1@fuzzing!source-assisted|book{3}}{164}
+\indexentry{1@fuzzing!source-assisted|lab{3}}{237}
+\indexentry{1@stacked tweaks|book{3}}{167}
+\indexentry{1@test case splicing|book{3}}{167}
 
 
 
@@ -257,5 +271,19 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Commands}}!HookDump|book{2}}{113}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!Firewalker|book{2}}{113}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!SharpHook|book{2}}{114}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!scapy!fuzzing|book{3}}{70-89}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Sulley|book{3}}{112}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Boofuzz|book{3}}{145-7}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!DynamoRIO|book{3}}{154}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!DynamoRIO!Drcov|book{3}}{155}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Dynapstalker|book{3}}{157}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!AFL|book{3}}{165}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!DynamoRIO|lab{3}}{237}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Dynapstalker|lab{3}}{237}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!jackelope|book{3}}{178}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!TinyInst|book{3}}{178}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Sulley|lab{3}}{251}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!scapy!fuzzing|lab{3}}{245}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!AFL|lab{3}}{259}
 
 
