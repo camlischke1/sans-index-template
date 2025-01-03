@@ -167,6 +167,37 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@fuzzing!source-assisted|lab{3}}{237}
 \indexentry{1@stacked tweaks|book{3}}{167}
 \indexentry{1@test case splicing|book{3}}{167}
+\indexentry{1@processors|book{4}}{5}
+\indexentry{1@physical memory|book{4}}{5}
+\indexentry{1@translation lookaside buffers|book{4}}{5}
+\indexentry{1@tlb|book{4}}{5}
+\indexentry{1@registers!general|book{4}}{7-14}
+\indexentry{1@registers!segments|book{4}}{14}
+\indexentry{1@stack pointer|book{4}}{11}
+\indexentry{1@virtual memory|book{4}}{16}
+\indexentry{1@ASLR|book{4}}{16}
+\indexentry{1@paging|book{4}}{17}
+\indexentry{1@tlb}{18}
+\indexentry{1@kernel pool|book{4}}{17}
+\indexentry{1@object files|book{4}}{20}
+\indexentry{1@stack operations|book{4}}{21}
+\indexentry{1@procedure!prologue|book{4}}{24-5}
+\indexentry{1@procedure!epilogue|book{4}}{27-9}
+\indexentry{1@procedure!calling conventions|book{4}}{31}
+\indexentry{1@cdecl|book{4}}{31}
+\indexentry{1@stdcall|book{4}}{31}
+\indexentry{1@fastcall|book{4}}{31}
+\indexentry{1@assembly language|book{4}}{36-8}
+\indexentry{1@linkers|book{4}}{39}
+\indexentry{1@loaders|book{4}}{39}
+\indexentry{1@symbol resolution|book{4}}{39}
+\indexentry{1@relocation|book{4}}{39}
+\indexentry{1@relative virtual addresses|book{4}}{39}
+\indexentry{1@ELF|book{4}}{40}
+\indexentry{1@procedure linkage|book{4}}{42}
+\indexentry{1@global offset table|book{4}}{42}
+\indexentry{1@shellcode|book{4}}{59-74}
+\indexentry{1@system calls|book{4}}{60}
 
 
 
@@ -175,6 +206,11 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \comment{********************************************************************************************
                                        WEBSITES/TOOLS SECTION
 *****************************************************************************************************}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{readelf}|book{4}}{44}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Netwide Assmebler|book{4}}{65}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{xxd}|book{4}}{66}
+
+
 \indexentry{20@{\Large\textbf{Tools/Commands}}!theC2Matrix|book{1}}{19}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!Magic Unicorn|book{1}}{20}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!SprayWMI|book{1}}{20}
@@ -285,5 +321,7 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Commands}}!Sulley|lab{3}}{251}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!scapy!fuzzing|lab{3}}{245}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!AFL|lab{3}}{259}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!GDB|book{4}}{32-5}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{objdump}|book{4}}{44}
 
 

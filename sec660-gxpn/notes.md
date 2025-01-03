@@ -10,6 +10,7 @@
     - some checks for authentication based on IP/MAC address --> impersonation possible
         - `ifconfig` on mac and Linux can spoof MAC addresses
         - `macshift` tool from github on Windows
+        - In order to leverage an already performed authentication, you need to impersonate a user that is still authenticated but already departed. This means the user has not actively logged out.
     - some NAC solutions have exceptions to devices that don't require authentication
         1. identify the NAC solution in use
         2. identify possible devices that would blend in but not require auth 
@@ -115,6 +116,9 @@
         - authentication tends to be weak
         - attacker objective: manipulate protocol to become primary router, intercept, and redirect traffic
 - IPv6 Attacks
+    - Broadcast addresses are no longer used in IPv6, having been replaced with multicast addresses. 
+        - instead of broadcast IPv4 address and an FF:FF:FF:FF:FF:FF MAC address, the host uses the FF02::1 IPv6 address with a destination MAC address of 33:33:00:00:00:01.
+        - IPv6 address ff02::1 is used for contacting all link-local devices.
     - use IPv6 to get around IPv4 filters/blacklists!
         1. Identify active ipv6 nodes
         2. scan and identify services
@@ -134,6 +138,8 @@
         - Attacker inserts RA messages that specify himself as the priority router
             - nodes send all ipv6 traffic to external networks through attacker router
     - remote attacks require direct access to ipv6 network through ISP or ipv4-to-ipv6 tunneled connection
+        - Teredo tunnel via miredo daemon 
+            - start miraedo, then Teredo tunnel is established and allow you to scan and enumerate remote IPv6 targets
     - Remote IPv6 Node Discovery
         - no opportunity for multicast node discovery, must rely on other techniques
             - DNS, 
@@ -166,6 +172,41 @@
             - an attacker can replay the handshake with the same secret key, and then the IVs are reused for the subsequent packets
             - reused IVs with reused secret keys allow attacker to decrypt the traffic
 
+# Cryptography
+- Encryption Algorithms
+    - Stream Ciphers
+        - All stream ciphers generate keystream data, which is then XORed with the plaintext to produce ciphertext (or vice versa). 
+        - Since the keystream is always the same for a given key, all stream ciphers must use a given key no more than once to encrypt data. 
+            - law of stream ciphers: never use the same key twice.
+    - Block Ciphers
+        - When the data to be encrypted are of an uneven length that is not evenly divisible by the block length, the data must be padded to an even block length.
+    - cipher block chaining (CBC) mode
+        - a plaintext block is XORed with the output of the prior ciphertext block before being encrypted. 
+        - This new ciphertext block becomes the input to the next encryption routine.
+- Attacks on Encryption
+    - oracle padding attack
+        - recover plaintext content from a vulnerable cipher block chaining (CBC)-mode block cipher. 
+    - stream cipher IV reuse attack
+        - must have knowledge of a known plaintext and ciphertext pair. 
+        - possible to identify limited quantities of known plaintext from encrypted data, especially in stream ciphers when the original packet length is known. 
+            - For example, Windows clients send several packets that have consistent content with unique frame sizes (such as DHCP requests) that are consistently known; 
+        - when you see a ciphertext value that matches the length of the Windows DHCP request, you can use the known plaintext content as a component against an IV collision to recover unknown plaintext.
+        - KRACK attack allows an attacker to leverage IV reuse to decrypt packets sent over a WPA2 network.
+    - Hash length extension attack
+        - the resulting hash of applying the MD5 calculation on the first block is used to initialize the registers for the second block
+        - As the hash for the first block is known to the attacker, the calculation can be continued with known values for the appended data, resulting in a valid hash for the new string that consists of the old string plus content of the attacker's choosing.
+    - Birthday paradox
+        - A concern with sequential initialization vector (IV) selection is how the IV is handled when a device reboots; 
+            - does it return to 0 (therefore colliding with all prior IVs that were used)? 
+            - What happens when the IV space is exhausted? 
+            - If the IV is randomly selected (and a history of prior IVs is not maintained to avoid collisions), then the IV selection algorithm is vulnerable to the birthday paradox attack, where the likeliness of a collision is exponentially increased for each IV used. 
+    - POODLE attack
+        - necessary to have a machine-in-the-middle (MitM) position that allows you to intercept the traffic between client (browser) and server to 
+        1. drop requests for TLS protocols and only allow requests for SSL3.0 to pass. 
+        2. JavaScript injection can be done from the MitM position, allowing an attacker to force the client to make requests until they are able to determine the key.
+- Common vulnerabilities
+    - AppArmor rules are fixed on the path
+        - symbolic links can bypass these
 # Advanced Post-exploitation
 ## 1) Bypassing Windows Restrictions
 - Types of restictions
@@ -188,7 +229,7 @@
         2. certutil to write the certificate to a binary executable on disk
     - restrictions are usually placed on EXE, but try scripts/DLLs/macros too
 ## 2) Obfuscation/Bypasses
--Living off the Land
+- Living off the Land
     - Rundll32.exe, cscript
     - Screensavers are special types of portable executables
         - good way for persistence and backdoors, replace the screensaver with a command shell or msfvenom payload
@@ -211,6 +252,51 @@
 - EDR bypasses  
     - Windows will allow any other EDR product to disable the Defender features
         - make own (purposefully) horrible EDR and install it to essentially disable Windows Defender    
+
+# Application Security
+## Fuzzing
+- Scapy
+    - sr(packet) sends the packet and receives responses solicited from the transmitted frame, displaying the summarized results to the user.
+        - sr() stops receiving when interrupted (with CTRL-S) or when it recognizes that the transmission is complete
+    - sr1(packet) is similar to sr(packet), but it stops after the first response
+    - send(packet) sends the packet but does not care about the response
+    - sendp(packet) is similar to send(packet) but sends the packet without adding the Ethernet header
+- Instrumented fuzzing is an automated mutation selection and delivery mechanism that uses monitored, dynamic analysis of a target process. 
+    - With instrumented fuzzing, the fuzzer launches (or is attached to) a process, monitors the execution flow of the process, and adjusts the input to the process to achieve high code coverage levels.
+    - DynamoRIO tools helps
+        - `drcov`
+            - tracks basic block hits for an instrumented application, writing the block addresses and basic target binary information to a log file in ASCII or binary format when the instrumented application terminates.
+        - `DynaPstalker`
+            - Python script written to read from drcov log files and produce an IDA Pro IDC script that color-codes each basic block reached during instrumentation.
+    - Sulley is a framework for building a protocol grammar for intelligent mutation fuzzing, generating mutations based on the analyst's description of a protocol
+        - When the fuzzing target is not on the same system as the fuzzer, you can deploy another instance of Sulley, which is controlled by the fuzzer system over a custom remote procedure call (RPC) protocol known as "pedrpc".
+        - s_num_mutations() function to identify the number of mutations that will be generated
+        - s_initialize function creates a new fuzzer construct definition
+- source code is not available for analysis, you can also evaluate the disassembly of a binary, identifying the basic blocks that are executed
+
+# Exploit Development
+## 1) Linux
+- Stack vs Heap
+    - Heap is dynamic for large memory allocations
+        - grows low to high
+    - Stack often used for short, finite operations and memory allocations related to function calls and function arguments
+        - grows from high to low memory space
+- Linkers v Loaders
+    - Linkers locate memory address of function from system Library
+    - Loaders responsible for loading that function/program from disk to memory
+    - Relocation
+        - programs typically have a defined loading address that is desired
+        - if that address is in use, relocation section patches the program to new addresses
+        - most functions are called via Relative Virtual Addresses based on offset from load address
+- Writing Shellcode
+    - shellcode is often dropped into address space via buffers and string operations
+        - this requires no null bytes
+    - shellcode is often executed as a user-level shell due to applications dropping privileges of the exploited application
+        - this requires setreuid()
+    
+
+
+## 2) Windows
 
 
 
