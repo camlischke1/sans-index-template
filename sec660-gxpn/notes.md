@@ -281,18 +281,64 @@
         - grows low to high
     - Stack often used for short, finite operations and memory allocations related to function calls and function arguments
         - grows from high to low memory space
+- Memory
+    - Paging
+        - If more memory is needed than what is physically available or if a flat memory model is not desired, the processor can provide virtual memory through an indirect memory mapping
+    - Registers
+        - Processor registers are physically integrated into the processor cores
+            - by far the fastest for the processor to access and has limited storage capacity
+        - 16 general-purpose registers 
+            - fourth control register, CR3, holds the starting address of the page directory. 
+                - This is the location where page tables start, used for physical-to-linear address mapping
+            - CS register is used for the code segment
+            - IP for the instruction pointer
+            - FLAGS for mathematical operations.
+            - EBP is used to reference variables on the stack, such as an argument passed to a called function
+            - ESP/RSP is used to maintain the address of the top of the stack, serving as the return pointer to restore the instruction pointer after the called function is complete
+            - EBX/RBX serves more as a true general register with no specific purpose. 
+            - EAX/RAX is used as an accumulator register
+            - RAX holds the desired system call number, and RDI, RSI, RDX, R10, R8, and R9 hold the arguments, in that order
+            - DX data register (EDX on a 32-bit system) has to point to the envp array, which is a pointer to the environment variables passed to the called function
+            - count register (ECX/RCX) is often used with loops and shifts to hold the number of iterations
+            - code segment registers
+                - FS code segment register holds a pointer to the Thread Information Block (TIB)
+                - DS and ES registers are data segment registers that are used for other purposes.
+- Intel v AT&T assembly
+    - AT&T Syntax 
+        - dollar sign ($) implies an immediate operand, as opposed to a value or address stored in a register
+            - ie `mov $4, %eax` would move the value 4 into the EAX register
+    - IA-32 system with PAE
+        - protected mode memory model
+        - 32-bit Intel processor 
+        - can support up to 64 GB of physical address space when using physical address extension (PAE)
+- Files
+    - Block Started by Symbol (BSS) segment contains uninitialized global variables
+        - Some of these variables may never be defined, and 
+        - some may be defined if a particular function is called. 
+        - any variable with a value of zero upon runtime may reside in the BSS segment
+        - Some compilers do not store these uninitialized variables in the BSS segment if it is determined that they are blocks of dead code that are unused.
+    - Set User ID (SUID) or Set Group ID (SGID) 
+        - identifying these programs may lead to a privilege escalation for the attacker
+        - `find / -perm /6000`
 - Linkers v Loaders
     - Linkers locate memory address of function from system Library
+        - dynamic linker 
+            - populates a table known as the Global Offset Table (GOT). 
+            - obtains the absolute address of requested functions and updates the GOT, as requested. 
     - Loaders responsible for loading that function/program from disk to memory
     - Relocation
         - programs typically have a defined loading address that is desired
         - if that address is in use, relocation section patches the program to new addresses
-        - most functions are called via Relative Virtual Addresses based on offset from load address
+        - most functions are called via Relative Virtual Addresses RVA based on offset from load address
+        - Files do not need to be relocatable because the GOT takes requests for locations from the Procedure Linkage Table (PLT)
 - Writing Shellcode
     - shellcode is often dropped into address space via buffers and string operations
         - this requires no null bytes
     - shellcode is often executed as a user-level shell due to applications dropping privileges of the exploited application
         - this requires setreuid()
+    - when invoking system calls
+        - arguments are loaded into processor registers and an interrupt is made. 
+            - On x86_64 systems, RAX holds the desired system call number, and RDI, RSI, RDX, R10, R8, and R9 hold the arguments,
 - Stack Overflows
     - vulnerable copy function overwrites the return pointer to attacker-controlled memory location
     - once you store shellcode at that location, we can execute it
@@ -300,25 +346,48 @@
         - used when buffer is too small or when the stack is nonexecutable
         - same idea but we write the return pointer to be a function in libc
             - using the same buffer, we can also set arguments for that function we call
+        - ret2puts technique 
+            - used to bypass ASLR
+            - print out memory addressing of something internal to the process in order to leak addressing
     - Protections
         - Canaries
+            - place a 4- or 8-byte value onto the stack after the buffer and before the return pointer
+                - UNIX-based OSes, this value is often called a "canary," 
+                - Windows-based OSes, it is often called a "security cookie."
             - value is known before execution and then checked once the buffer is written
                 - can be null
                 - can be a fixed value with a null byte in it to be sure string operations don't overwrite it
+                    -  terminator canary uses the value 0x00000aff
+                    - strcpy() fails to recreate the canary due to the null terminator value of 0x00
                 - can be a random value
         - Stack Smashing Protector or StackGuard built into `gcc`
             - built off of ProPolice
+            - placing a random canary on the stack to protect the return pointer and the saved frame pointer
+                - if "urandom" strong number generator cannot be used, the canary reverts to using a terminator canary
+            - reorders local variables
         - ASLR Address Space Layout Randomization randomizes stack and heap addressing
             - use `LDD` command to check if a library isn't getting randomized for some reason -- this could help in exploitation
+            - default application is compiled as position independent executable (PIE)
+                - which enables address space layout randomization (ASLR) on the binary
+                - compiler setting in GCC (which is enabled by default with modern versions of GCC) specifies whether or not the binary image itself is to participate in randomization
+                - To disable the protection for a binary, you would use the `-no-pie` flag
+            - To ensure that stacks continue to grow from higher memory down toward the heap segment, and vice versa, without colliding, the most significant bits (MSBs) are not randomized
+            - command `echo 2 > /proc/sys/kernel/randomize_va_space` 
+                - writes the value 2 to the randomize_va_space file
+                - enables full ASLR to randomize: 
+                    - addresses of the stack, 
+                    - mmap regions, 
+                    - VDSO page
+                    - heap memory for each process
     - Bypassing protections
-
-
-
-        
+        - Egg hunting
+            - after initial shellcode execution, search for the unique tag prepended to the additional shellcode already on machine
+                - Once the tag is discovered, the appended shellcode is immediately executed
 - Return-Oriented Programming
     - used when we can't inject shellcode into memory, instead we just use bbytes that are already there
     - string together tons of gadgets to achieve a shellcode-like execution path
-        - gadgets are executable blocks of code typically already loaded into memory (ASLR disabled is preferred)
+        - gadgets are executable blocks of code typically already loaded into memory
+            - sequences of instructions that perform a desired operation and are usually followed by a return
         - we can literally cherry-pick bytes of instructions for our own purposes
     - ROP Shellcode
         - new goal of executing an `execve()` system call requires:

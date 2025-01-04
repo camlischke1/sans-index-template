@@ -207,12 +207,12 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@export address table|book{4}}{81}
 \indexentry{1@shellcode!multistage|book{4}}{84}
 \indexentry{1@ws2\_32.dll|book{4}}{84}
-\indexentry{1@stack!overflows|book{4}}{92-6}
+\indexentry{1@stack!overflows!linux|book{4}}{92-6}
 \indexentry{1@setuid|book{4}}{97}
 \indexentry{1@stripped programs|book{4}}{106}
 \indexentry{1@return2libc|book{4}}{107}
 \indexentry{1@return2libc|lab{4}}{295}
-\indexentry{1@stack!overflows|lab{4}}{266}
+\indexentry{1@stack!overflows!linux|lab{4}}{266}
 \indexentry{1@rop|book{4}}{112}
 \indexentry{1@gadgets|book{4}}{113}
 \indexentry{1@jop|book{4}}{117}
@@ -225,7 +225,13 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@position independent executable|book{4}}{150}
 \indexentry{1@mmap|book{4}}{138}
 \indexentry{1@mmap}{153}
-\indexentry{1@stack!overflows}{310}
+\indexentry{1@stack!overflows!linux}{310}
+\indexentry{1@bss|book{4}}{19}
+\indexentry{1@tib|book{4}}{14}
+\indexentry{1@thread information block|book{4}}{14}
+\indexentry{1@egg hunting|book{4}}{84}
+\indexentry{1@pae|book{4}}{16}
+
 
 
 
