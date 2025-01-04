@@ -293,12 +293,66 @@
         - this requires no null bytes
     - shellcode is often executed as a user-level shell due to applications dropping privileges of the exploited application
         - this requires setreuid()
+- Stack Overflows
+    - vulnerable copy function overwrites the return pointer to attacker-controlled memory location
+    - once you store shellcode at that location, we can execute it
+    - Return-to-libc
+        - used when buffer is too small or when the stack is nonexecutable
+        - same idea but we write the return pointer to be a function in libc
+            - using the same buffer, we can also set arguments for that function we call
+    - Protections
+        - Canaries
+            - value is known before execution and then checked once the buffer is written
+                - can be null
+                - can be a fixed value with a null byte in it to be sure string operations don't overwrite it
+                - can be a random value
+        - Stack Smashing Protector or StackGuard built into `gcc`
+            - built off of ProPolice
+        - ASLR Address Space Layout Randomization randomizes stack and heap addressing
+            - use `LDD` command to check if a library isn't getting randomized for some reason -- this could help in exploitation
+    - Bypassing protections
+
+
+
+        
+- Return-Oriented Programming
+    - used when we can't inject shellcode into memory, instead we just use bbytes that are already there
+    - string together tons of gadgets to achieve a shellcode-like execution path
+        - gadgets are executable blocks of code typically already loaded into memory (ASLR disabled is preferred)
+        - we can literally cherry-pick bytes of instructions for our own purposes
+    - ROP Shellcode
+        - new goal of executing an `execve()` system call requires:
+            1. AL register contains the system call number (0x0b in this case)
+            2. base pointer BX holds the pointer to the argument for execve
+            3. count register CX points to the argument vector ARGV pointer array
+            4. data register DX points to ENVP array (environment variable pointer)
+        - 
+
+
     
 
 
 ## 2) Windows
-
-
+- Writing Shellcode
+    - Challenges
+        - forced to use Windows API to make system calls
+        - locations of system calls and functions change with each version/OS kit
+            - Kernel32.dll, kernelbase.dll, ntdll.dll are always loaded but hard to locate
+        - does not allow for direct access to opening sockets/network ports via system calls
+    - `Kernel32.dll`
+        1. Locating `kernel32.dll` using Process Environment Block PEB
+            - per-process structure that lists all loaded modules, including the base address of this dll
+            - always the second- or third-loaded library in the PEB
+            - OR Locating using SEH Unhandled Exception Handler
+                - raising an exception will call a function within `kernel32.dll` which can then be used to walk back to find the base address of the library
+        
+        2. GetProcAddress() allows shellcode to obtain the addresses of desired functions within the loaded libraries
+            - find the RVA offset of this function by using the Export Address Table EAT for kernel32dll
+        3. LoadLibraryA() allows to load libraries into process
+            - find the RVA using the GetProcAddress() function 
+        4. Now that these have been found:
+            - any module can be loaded with LoadLibraryA()
+            - APIs and functions can be resolved GetProcAddress()
 
 # Miscellaneous
 ## Passwords 

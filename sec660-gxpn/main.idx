@@ -165,7 +165,7 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@basic blocks|book{3}}{153}
 \indexentry{1@fuzzing!source-assisted|book{3}}{164}
 \indexentry{1@fuzzing!source-assisted|lab{3}}{237}
-\indexentry{1@stacked tweaks|book{3}}{167}
+\indexentry{1@stack!tweaks|book{3}}{167}
 \indexentry{1@test case splicing|book{3}}{167}
 \indexentry{1@processors|book{4}}{5}
 \indexentry{1@physical memory|book{4}}{5}
@@ -173,14 +173,13 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@tlb|book{4}}{5}
 \indexentry{1@registers!general|book{4}}{7-14}
 \indexentry{1@registers!segments|book{4}}{14}
-\indexentry{1@stack pointer|book{4}}{11}
+\indexentry{1@stack!pointer|book{4}}{11}
 \indexentry{1@virtual memory|book{4}}{16}
-\indexentry{1@ASLR|book{4}}{16}
 \indexentry{1@paging|book{4}}{17}
 \indexentry{1@tlb}{18}
 \indexentry{1@kernel pool|book{4}}{17}
 \indexentry{1@object files|book{4}}{20}
-\indexentry{1@stack operations|book{4}}{21}
+\indexentry{1@stack!operations|book{4}}{21}
 \indexentry{1@procedure!prologue|book{4}}{24-5}
 \indexentry{1@procedure!epilogue|book{4}}{27-9}
 \indexentry{1@procedure!calling conventions|book{4}}{31}
@@ -196,9 +195,37 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@ELF|book{4}}{40}
 \indexentry{1@procedure linkage|book{4}}{42}
 \indexentry{1@global offset table|book{4}}{42}
-\indexentry{1@shellcode|book{4}}{59-74}
+\indexentry{1@shellcode!linux|book{4}}{59-74}
 \indexentry{1@system calls|book{4}}{60}
-
+\indexentry{1@shellcode!windows|book{4}}{78}
+\indexentry{1@windows!kernel resources|book{4}}{79}
+\indexentry{1@kernel32.dll|book{4}}{80}
+\indexentry{1@peb|book{4}}{81}
+\indexentry{1@process environment block|book{4}}{81}
+\indexentry{1@seh|book{4}}{81}
+\indexentry{1@structured exception handling|book{4}}{81}
+\indexentry{1@export address table|book{4}}{81}
+\indexentry{1@shellcode!multistage|book{4}}{84}
+\indexentry{1@ws2\_32.dll|book{4}}{84}
+\indexentry{1@stack!overflows|book{4}}{92-6}
+\indexentry{1@setuid|book{4}}{97}
+\indexentry{1@stripped programs|book{4}}{106}
+\indexentry{1@return2libc|book{4}}{107}
+\indexentry{1@return2libc|lab{4}}{295}
+\indexentry{1@stack!overflows|lab{4}}{266}
+\indexentry{1@rop|book{4}}{112}
+\indexentry{1@gadgets|book{4}}{113}
+\indexentry{1@jop|book{4}}{117}
+\indexentry{1@shellcode!return-oriented|book{4}}{119}
+\indexentry{1@environment variable pointer|book{4}}{119}
+\indexentry{1@canaries|book{4}}{126-9}
+\indexentry{1@stack!protection|book{4}}{126-46}
+\indexentry{1@ASLR|book{4}}{138-46}
+\indexentry{1@PIE|book{4}}{150}
+\indexentry{1@position independent executable|book{4}}{150}
+\indexentry{1@mmap|book{4}}{138}
+\indexentry{1@mmap}{153}
+\indexentry{1@stack!overflows}{310}
 
 
 
@@ -209,6 +236,13 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{readelf}|book{4}}{44}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!Netwide Assmebler|book{4}}{65}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{xxd}|book{4}}{66}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Ropper|book{4}}{122}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!ida sploiter|book{4}}{122}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!pwntools|book{4}}{122}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!PEDA|book{4}}{98}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!PEDA}{151}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{ldd}|book{4}}{149}
+
 
 
 \indexentry{20@{\Large\textbf{Tools/Commands}}!theC2Matrix|book{1}}{19}
