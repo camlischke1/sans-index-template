@@ -1,5 +1,5 @@
 # Advanced Network Attacks
-## 1) Accessing the Network
+### 1) Accessing the Network
 - Network Admission Control NAC provides some level of security or requirement to ensure that authenticated or authorized devices can gain access to the network
 - *Captive portals* act as an intermediate network, drop most traffic until successful authentication
     - attack the portal itself
@@ -62,7 +62,7 @@
             - to VLAN hop, you need to kno the VLAN number in order to create a new sub-interface
                 - can be gathered through a Cisco Discovery Protocol CDP capture or bruteforced, since there are only 4094 possibilities
 
-## 2) Abusing the Network
+### 2) Abusing the Network
 - MitM via ARP Spoofing
     - impersonate the default gateway and all connected machines for the network
         1. get list of devices on the LAN via ICMP Echos or ARP flooding
@@ -208,7 +208,7 @@
     - AppArmor rules are fixed on the path
         - symbolic links can bypass these
 # Advanced Post-exploitation
-## 1) Bypassing Windows Restrictions
+### 1) Bypassing Windows Restrictions
 - Types of restictions
     - Group Policy Objects and Software Restriction Policies
         - Unrestricted -- software access rights are determined by user access
@@ -228,7 +228,7 @@
         2. download the fake certificate file via notepad
         2. certutil to write the certificate to a binary executable on disk
     - restrictions are usually placed on EXE, but try scripts/DLLs/macros too
-## 2) Obfuscation/Bypasses
+### 2) Obfuscation/Bypasses
 - Living off the Land
     - Rundll32.exe, cscript
     - Screensavers are special types of portable executables
@@ -254,7 +254,7 @@
         - make own (purposefully) horrible EDR and install it to essentially disable Windows Defender    
 
 # Application Security
-## Fuzzing
+### Fuzzing
 - Scapy
     - sr(packet) sends the packet and receives responses solicited from the transmitted frame, displaying the summarized results to the user.
         - sr() stops receiving when interrupted (with CTRL-S) or when it recognizes that the transmission is complete
@@ -275,7 +275,7 @@
 - source code is not available for analysis, you can also evaluate the disassembly of a binary, identifying the basic blocks that are executed
 
 # Exploit Development
-## 1) Linux
+### 1) Linux
 - Stack vs Heap
     - Heap is dynamic for large memory allocations
         - grows low to high
@@ -379,12 +379,15 @@
                     - mmap regions, 
                     - VDSO page
                     - heap memory for each process
+        - Write XOR Execute
+            - NX bit used by AMD 64-bit processors and the XD (also known as ED) bit used by Intel processors provide protection through a form of W^X (Write XOR Execute) on Linux.
     - Bypassing protections
         - Egg hunting
             - after initial shellcode execution, search for the unique tag prepended to the additional shellcode already on machine
                 - Once the tag is discovered, the appended shellcode is immediately executed
 - Return-Oriented Programming
     - used when we can't inject shellcode into memory, instead we just use bbytes that are already there
+    - demonstrated to defeat hardware Data Execution Prevention (DEP)
     - string together tons of gadgets to achieve a shellcode-like execution path
         - gadgets are executable blocks of code typically already loaded into memory
             - sequences of instructions that perform a desired operation and are usually followed by a return
@@ -395,13 +398,127 @@
             2. base pointer BX holds the pointer to the argument for execve
             3. count register CX points to the argument vector ARGV pointer array
             4. data register DX points to ENVP array (environment variable pointer)
-        - 
+    - Stack Pivoting
+        - allows us to move the position of the stack pointer to point away from the stack and onto another area in memory
+            - only the stack pointer can use the `push`, `pop`, and `ret` instrucitons, which may be held at a different memory region than on the stack
+        - uses the `xchg` instruction in assembly
+    - PUSHAD instruction pushes each register onto the stack in the following order: EAX, ECX, EDX, EBX, original ESP, EBP, ESI, and EDI.
+        - instead of having to find multiple instructions/gadgets to obtain the same result.
 
 
     
 
 
-## 2) Windows
+### 2) Windows
+- Background
+    - Two Access Modes
+        - Ring 0 Kernel mode
+            - core OS and drivers, hardware interactions, interrupts, concurrency
+            - Kernel memory shares a single address space, unlike user-mode applications. On 32-bit systems, the kernel can easily access all memory on all processes with unlimited control.
+            - shared memory for all kernel mode processes
+                - 32-bit machines unlimited control for all processes
+                - 64-bit machines introduced KMCS which requires a CA to vouch for a driver when trying to access memory/address space
+        - Ring 3 User mode = application code and drivers
+            - Immunity Debugger is a Ring 3 debugger, it does not have visibility in Ring 0 instructions
+                - address 0x704050F0 should show up in the disassembler pane since that is a memory address assigned to the user memory pool (ring 3), which goes from 0x00000000 to 0x7fffffff. 
+                - On the other side, the kernel memory pool goes from 0x80000000 to 0xffffffff, and Immunity Debugger (as well as other userland debuggers) is incapable of debugging kernel memory addresses (ring 0)
+    - Differences from Linux
+        - Windows API calls replace Linux system calls
+            - Kernel32.dll, kernelbase.dll, ntdll.dll are always loaded
+        - PE/COFF
+            - DOS MZ header. You will most commonly see the hex value "4D 5A" as the first value. The magic number 4D 5A translates from hex to ASCII as MZ, which stands for Mark Zbikowski, one of the original DOS developers. 
+                - This header also has a stub area. An example of when the code in this stub area is executed is when a user attempts to run the file under DOS. The following message would display in this case: "This program cannot be run in DOS mode."
+            - replace ELF in Linux
+            - DLL and Executable formats
+            - Import Address Table
+                - Windows equivalent of PLT in Linux
+                - holds symbols that require resolution from external DLLs upon runtime
+                - if the executable makes use of an external library, this function must be listed in the IAT
+            - Export Address Table
+                - Windows equivalent of Linux GOT
+                - holds symbols that can be used by other DLL/PE files
+                - contains the RVA of the requested functions, which must be added to the load address to get logical address
+        - Threading is used on Windows as opposed to forking
+            - threads share same address space and ID as parent process and can inherit attributes 
+            - Thread Information Block TIB
+                - FS segment register holds location in 32-bit proc, GS segment register on 64-bit
+                - The address of the TIB can be found at offset 0x18 within the FS segment register. The other offsets hold different information:
+                - holds: 
+                    - pointer to structured error handling seh chain
+                    - address of Process Environment Block PEB
+                        - PEB contains process-specfici information including base address of the image, heap address, and imported modules
+    - Structured Exception Handling SEH
+        - if exception occurs, Windows OS uses callback function to handle the exception
+            - callback function is defined in TIB
+        - an entire chain of what to do in the case of exceptions is defined
+            - if none of these contraints are met, an unhandled exception will terminate process
+            - If the end of the SEH chain is reached, the Windows Unhandled_Exception_Handler handles the exception, typically terminating the process 
+        - ESP+8 is holding a pointer back to the "next structured exception handling" (NSEH) position on the stack associated with this SEH call
+    - WOW64
+        - set of DLLs used to translate 32-bit applications on a 64-bit machine
+- Exploit Mitigation Controls (quick reference at book 5, page 60)
+    - OS controls
+        - system-enforced and cannot be disabled by an application
+        - Data Execution Prevention
+            - marks memory pages as nonexecutable (ie stack or heap cannot contain executable code)
+            - hardware-based controls in which processor marks memory pages with a flag as they are allocated by the processor
+                - NX No execute bit on AMD
+                - XD Execute Disable on Intel
+            - Software DEP is supported even if hardware DEP is not available. However, software DEP only prevents structured exception handling (SEH) attacks, using SafeSEH.
+            - SEHOP Structured Exception Handling Overwrite Protection
+                - idea is that if an error handler address is overwritten, the entire chain will never be able to be walked fully
+                - SEHOP puts a special character at the end of the chain and walks the entire chain before implementing the handling functions
+                    - if chain never reaches the special character, the chain does not execute
+                - SEHOP inserts a symbolic record called the "FinalExceptionHandler" at the end of the SEH chain in ntdll.dll, ensuring that the SEH chain is intact before passing control to the handler
+            - hardware-based DEP in Windows (book 5, page 87)
+                - default only for essential Windows services and applications
+                - flagged for DEP in ProcessExecuteFlags ProcessInformationClass
+                    - goal is to overwrite the ProcessExecuteFlags to set DEP to disabled using the ZwSetInformationProcess() in ntdll
+                    - can be done with ROP (lab 5.3, page 397)
+                - this still requires stack overflows, but changing the return pointer can lead to execution    
+                    - canaries can still stop this from happening, but not if we use SEH overwrite
+        - PEB randomization 
+            - PEB is a structure that holds image and load library addresses
+            - reachabkle by dereferencing FS:[0x30]
+        - Safe Unlinking
+        - ASLR cannot be disabled
+        - Control Flow Guard CFG
+            - identifies addresses deemed as safe entry point for indirect calls and only allows execution to occur if the indirect call exists within a block where a true function call entry point exists
+                - stores this info in a bitmap that is checked prior to allowing execution of indirect calls
+            - you must use a gadget within a block of code that contains at least one function entry point
+        - Control flow Integrity and Control Flow Enforcement CFI CET
+            - Shadow stacks
+                - essentially a second stack
+                    - this second stack only allows the `call` instruction to write a copy of the return address used in the call chain
+                - before returning execution to the return pointer address, the shadow stack is checked
+                    - if shadow stack EBP and regular EBP do not match, exception is thrown
+            - Indirect branch tracking
+                - injects an instruction `ENDBR32` and `ENDBR64` after each `call` instruction
+                - OS throws exception if this is not the next instruction
+    - Compile time controls
+        - added at compilation and include code or metadata into a program
+        - SafeSEH protections
+            - builds table of all valid error handlers inside DLL and checks if ever overwritten by an attack
+            - requires all imported modules to participate, otherwise basically ineffective
+            - Beginning with Windows XP SP2, the SafeSEH compiler option was added to provide protection against common attacks on structured exception handling (SEH) overwrites. When this flag is used during compile time, the linker builds a table of good exception handlers that may be used. If the exception handler is overwritten and the address is not listed in the table as a valid handler, the program terminates and control is not passed to the unknown address.
+        - Cookies/Canaries
+            - Low Fragmentation Heap LFH encodes 32-bits
+        - MemGC
+            - Deferred Frees
+                - instead of immediate release once freed, they are held onto and not released until a threshold is met
+                - MemGC replaced this
+            - checks for references to any objects marked to be freed
+                - an object marked to be freed with references that still exist will cause an exception and prevent exploitation
+        - Isolated Heaps
+            - object allocations are not made part of the standard process heap but are now isolated
+            - replacement of freed objects much more difficult
+        - Dyanmic Base
+    - ExploitGuard
+        - Windows 10+ replacement for EMET
+        - Untrusted fonts
+        - Core isolation
+        - BASLR
+        - ACG
 - Writing Shellcode
     - Challenges
         - forced to use Windows API to make system calls
@@ -422,9 +539,12 @@
         4. Now that these have been found:
             - any module can be loaded with LoadLibraryA()
             - APIs and functions can be resolved GetProcAddress()
-
+- Disabling DEP
+    - done through ROP
+    - VirtualProtect() function is used to disable Data Execution Prevention (DEP) in a desired range of memory. It does not affect the whole process and is used to mark the area of memory that contains the shellcode as executable. 
+    - SetProcessDEPPolicy() changes the DEP policy for the whole process.
 # Miscellaneous
-## Passwords 
+### Passwords 
 - Password Lists
     - COMB Compilation of Many Breaches
     - The Probable Password List

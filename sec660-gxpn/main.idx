@@ -231,6 +231,63 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{1@thread information block|book{4}}{14}
 \indexentry{1@egg hunting|book{4}}{84}
 \indexentry{1@pae|book{4}}{16}
+\indexentry{1@kmcs|book{5}}{6}
+\indexentry{1@pe/coff|book{5}}{10-4}
+\indexentry{1@windows!IAT|book{5}}{10}
+\indexentry{1@windows!EAT|book{5}}{10}
+\indexentry{1@pe/coff!magic|book{5}}{14}
+\indexentry{1@lazy linking|book{5}}{14}
+\indexentry{1@windows!api|book{5}}{24}
+\indexentry{1@windows!kernel|book{5}}{6}
+\indexentry{1@windows!tib|book{5}}{25}
+\indexentry{1@windows!peb|book{5}}{26}
+\indexentry{1@windows!seh|book{5}}{27-8}
+\indexentry{1@windows!wow64|book{5}}{29}
+\indexentry{1@data execution prevention|book{5}}{39}
+\indexentry{1@windows!seh}{40-4}
+\indexentry{1@pop-pop-ret|book{5}}{43}
+\indexentry{1@sehop|book{5}}{44}
+\indexentry{1@security cookie|book{5}}{45}
+\indexentry{1@canaries|book{5}}{45}
+\indexentry{1@windows!peb|book{5}}{46}
+\indexentry{1@windows!peb!randomization|book{5}}{46}
+\indexentry{1@security cookie!heap|book{5}}{47}
+\indexentry{1@safe unlinking|book{5}}{48}
+\indexentry{1@windows!lfh|book{5}}{51}
+\indexentry{1@low fragmentation heap|book{5}}{51}
+\indexentry{1@windows!aslr|book{5}}{53}
+\indexentry{1@exploit guard|book{5}}{54}
+\indexentry{1@use-after-free|book{5}}{55}
+\indexentry{1@isolated heap|book{5}}{55}
+\indexentry{1@deferred frees|book{5}}{55}
+\indexentry{1@memgc|book{5}}{56}
+\indexentry{1@control flow guard|book{5}}{57}
+\indexentry{1@windows!cfg|book{5}}{51}
+\indexentry{1@shadow stacks|book{5}}{58}
+\indexentry{1@stack!shadow|book{5}}{58}
+\indexentry{1@indirect branch tracking|book{5}}{58}
+\indexentry{1@control flow enforcement|book{5}}{58}
+\indexentry{1@windows!cet|book{5}}{58}
+\indexentry{1@windows!hardening|book{5}}{60}
+\indexentry{1@windows!overflow|lab{5}}{357}
+\indexentry{1@windows!seh!overwrites|book{5}}{66}
+\indexentry{1@windows!seh!overwrites|lab{5}}{378}
+\indexentry{1@pop-pop-ret}{70}
+\indexentry{1@windows!hardware dep|book{5}}{79}
+\indexentry{1@data execution prevention|book{5}}{79}
+\indexentry{1@data execution prevention|lab{5}}{397}
+\indexentry{1@ntdll|book{5}}{83}
+\indexentry{1@LdrpCheckNXCompatibility|book{5}}{83}
+\indexentry{1@ProcessInformationClass|book{5}}{83}
+\indexentry{1@ProcessExecuteFlags|book{5}}{83}
+\indexentry{1@data execution prevention!disable|book{5}}{99}
+\indexentry{1@canaries}{100}
+\indexentry{1@rop!disable DEP|book{5}}{99-113}
+\indexentry{1@stack!pivoting|book{5}}{111}
+\indexentry{1@VirtualProtect()|book{5}}{99-113}
+\indexentry{1@pushad|book{5}}{110}
+\indexentry{1@sysenter|book{5}}{94}
+
 
 
 
@@ -248,6 +305,8 @@ USER DEFINED COMMANDS AND SPECIAL SYNTAX
 \indexentry{20@{\Large\textbf{Tools/Commands}}!PEDA|book{4}}{98}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!PEDA}{151}
 \indexentry{20@{\Large\textbf{Tools/Commands}}!\cmds{ldd}|book{4}}{149}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!Immunity Debugger|book{5}}{15-24}
+\indexentry{20@{\Large\textbf{Tools/Commands}}!x64dbg|book{5}}{16}
 
 
 
