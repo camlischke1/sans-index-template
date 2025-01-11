@@ -61,6 +61,10 @@
                 3. exploit other phones on voice VLAN
             - to VLAN hop, you need to kno the VLAN number in order to create a new sub-interface
                 - can be gathered through a Cisco Discovery Protocol CDP capture or bruteforced, since there are only 4094 possibilities
+    - CISCO Protocols
+        - CDP plays a role in discovery and information gathering, by providing an attacker with information he can later use to mount network attacks, for example VoIP VLAN hopping attacks.
+        - VTP propagates the information regarding the VLANs that are used throughout the network among Cisco devices, hence if an attacker is able to peek into VTP frames, they will gain access to the VLAN list, very valuable information in terms of network discovery.
+        - DTP allows two devices to negotiate trunk ports. Generally these devices would be Cisco devices, however tools like Yersinia allow a computer to spoof DTP frames and force a switch with a vulnerable port configuration to set the port to trunk mode, enabling the attacker to access the VLANs in the trunk, if the trunk is 802.1Q based, as Unix/Windows based operating systems do not speak ISL (Cisco's proprietary trunking protocol).
 
 ### 2) Abusing the Network
 - MitM via ARP Spoofing
@@ -70,6 +74,7 @@
         3. convince the devices on the network that you are the default gateway
     - Ettercap automates this, performs password sniffing, can be extended using plugins, filters, etc
         - can replace info in responses like HTTP headers and HTML tags
+            - DNSSEC will not help protect against Ettercap's DNS spoofing.
     - can force SMB relays/sniffs
         1. write a filter to change the `If-Modiofied-Since` header to bypass browser caching
         2. write a filter to change the `Accept-Encoding` filter to force server to send text response instead of gzip
@@ -183,6 +188,9 @@
     - cipher block chaining (CBC) mode
         - a plaintext block is XORed with the output of the prior ciphertext block before being encrypted. 
         - This new ciphertext block becomes the input to the next encryption routine.
+    - ECB
+        - ECB is the only encryption mode listed that uses the same IV for all blocks.
+        - If two things are encrpyted using ECB with the same plaintext and the end bytes are the same, the initialization vector(IV) must have been the same. 
 - Attacks on Encryption
     - oracle padding attack
         - recover plaintext content from a vulnerable cipher block chaining (CBC)-mode block cipher. 
@@ -236,6 +244,7 @@
     - Powershell
         - has a .bashrc-like feature where profiles are run every single time Powershell starts. we can inject here. 
         - persistent modules are loaded if included in the PSModulePath variable. we can inject here
+        - The order of precedence for commands used by PowerShell starts with doskey alias (pre-Windows 10), then goes to Alias, Function, Cmdlet, and an Executable for each directory in $PATH.
     - Exploiting pre-installed applications 
         - Adobe and other PDF readers can run javascript
         - browsers as PDF-viewers do not run JavaScript inside the pdf file
@@ -261,6 +270,12 @@
     - sr1(packet) is similar to sr(packet), but it stops after the first response
     - send(packet) sends the packet but does not care about the response
     - sendp(packet) is similar to send(packet) but sends the packet without adding the Ethernet header
+    - ping sweeps
+        -  sr1(x, timeout=1) is the most useful option, because it shows responses and stops after the first response.  
+        - send is less useful because it does not show responses.  
+        - sendp, srp, and srp1 are not useful all because the constructed packet does not include layer 2 info and will never actually make it to the destination without it.  
+        - sr(x) is not as useful because no timeout is specified, and the operator must hit control C for each step through the loop. 
+        - timeout=1 tells sr1 how long to wait for the first responses
 - Instrumented fuzzing is an automated mutation selection and delivery mechanism that uses monitored, dynamic analysis of a target process. 
     - With instrumented fuzzing, the fuzzer launches (or is attached to) a process, monitors the execution flow of the process, and adjusts the input to the process to achieve high code coverage levels.
     - DynamoRIO tools helps
@@ -379,6 +394,9 @@
                     - mmap regions, 
                     - VDSO page
                     - heap memory for each process
+            - Trampolines
+                - instead of hardcoding ESP to be the location of a NOP sled, use it to point to a `call esp` instruction, which will then be used to point to the ESP regardless of ASLR randomization
+                - Since ASLR is in use, using a trampoline will give a higher chance of success than trying to hit the NOP sled or shellcode directly. The esp register is holding the address of the start of the NOP sled, so the 'call esp' instruction will transfer execution to the sled and then to the shellcode. 
         - Write XOR Execute
             - NX bit used by AMD 64-bit processors and the XD (also known as ED) bit used by Intel processors provide protection through a form of W^X (Write XOR Execute) on Linux.
     - Bypassing protections
@@ -404,6 +422,9 @@
         - uses the `xchg` instruction in assembly
     - PUSHAD instruction pushes each register onto the stack in the following order: EAX, ECX, EDX, EBX, original ESP, EBP, ESI, and EDI.
         - instead of having to find multiple instructions/gadgets to obtain the same result.
+- Finding vulnerable applications
+    - The first step in this procedure is to compile the program char_buff.c to an application named buff_size, the command gcc char_buff.c -o char_buff can be used.  Then, using `gdb` examine the application char_buff, first use the gdb command "disas main" to look for interesting functions. There is one function named "funk" that is called and should be examined.  The function "funk" can be disassembled by using the command "disas funk".
+    - Within this function you can see that the value 0x6c is being subtracted from %esp at the location 0x0804847b.  The hex value 0x6c can be converted to binary 108 and is the size in bytes of the vulnerable buffer.  
 
 
     
@@ -422,6 +443,7 @@
             - Immunity Debugger is a Ring 3 debugger, it does not have visibility in Ring 0 instructions
                 - address 0x704050F0 should show up in the disassembler pane since that is a memory address assigned to the user memory pool (ring 3), which goes from 0x00000000 to 0x7fffffff. 
                 - On the other side, the kernel memory pool goes from 0x80000000 to 0xffffffff, and Immunity Debugger (as well as other userland debuggers) is incapable of debugging kernel memory addresses (ring 0)
+                - Simply opening Immunity debugger and typing !mona pattern_offset 42663042 will tell you that pattern Bf0B is found at position 930.  It will take 930 bytes to overwrite the return pointer.  
     - Differences from Linux
         - Windows API calls replace Linux system calls
             - Kernel32.dll, kernelbase.dll, ntdll.dll are always loaded
@@ -448,12 +470,17 @@
                     - address of Process Environment Block PEB
                         - PEB contains process-specfici information including base address of the image, heap address, and imported modules
     - Structured Exception Handling SEH
+        - held at FS:0x00
         - if exception occurs, Windows OS uses callback function to handle the exception
             - callback function is defined in TIB
         - an entire chain of what to do in the case of exceptions is defined
             - if none of these contraints are met, an unhandled exception will terminate process
             - If the end of the SEH chain is reached, the Windows Unhandled_Exception_Handler handles the exception, typically terminating the process 
         - ESP+8 is holding a pointer back to the "next structured exception handling" (NSEH) position on the stack associated with this SEH call
+        - EXAMPLE:
+            1. If that handler can handle whatever exception is being experienced, then the SEH process should stop at that point. If the handler cannot handle the exception, execution of the SEH process continues by going to the next structured exception handler (NSEH) pointer to the next handler on the stack. 
+            2. The top line of the, address 0x0012FF5C, holds the NSEH, the pointer to address 0x0012FFB0. The pointer points down to the location on the stack that is the next handler's NSEH position. 
+            3. This one is holds the pointer, 0xFFFFFFFF, indicating the end of the chain. The address right below 0xFFFFFFFF is the final SE Handler on this thread's stack.
     - WOW64
         - set of DLLs used to translate 32-bit applications on a 64-bit machine
 - Exploit Mitigation Controls (quick reference at book 5, page 60)
